@@ -9,6 +9,30 @@ permalink: mydoc_qlab.html
 folder: mydoc
 ---
 
+## Workspace
+
+Before we begin, we highlight some things below in the workspace to pay attention to. 
+
+{% include image.html file="workspace-diagram.png" alt="QLab5" caption="Some workspace elements. Image credit: [https://qlab.app/docs/v5/fundamentals/workspace/](https://qlab.app/docs/v5/fundamentals/workspace/)."%}
+
+
+| **<span class="cr">General</span>** | **<span class="cb">Cue types</span>** | **<span class="cg">Cue list elements</span>** | **<span class="cy">Inspector elements</span>** |
+| :--- | :--- | :--- | :--- |
+| 1: [The GO Button](https://qlab.app/docs/v5/fundamentals/workspace/#the-go-button) | 4: [Group cue](https://qlab.app/docs/v5/fundamentals/group-cues) | 30: [Playhead](https://qlab.app/docs/v5/fundamentals/workspace/#the-playhead) | 41: [Selected cue number](https://qlab.app/docs/v5/fundamentals/inspector/#number) |
+| 2: [The Standby display](https://qlab.app/docs/v5/fundamentals/workspace/#the-standby-display) | 5: [Audio cue](https://qlab.app/docs/v5/audio/audio-cues) | 31: [Cue type icon](https://qlab.app/docs/v5/fundamentals/workspace/#cue-type) | 42: [Selected cue duration](https://qlab.app/docs/v5/fundamentals/inspector/#duration) |
+| 3: [The Notes field](https://qlab.app/docs/v5/fundamentals/workspace/#the-notes-field) | 7: [Video cue](https://qlab.app/docs/v5/video/video-cues) | 32: [Cue number](https://qlab.app/docs/v5/fundamentals/workspace/#cue-number) | 43: [Selected cue pre-wait](https://qlab.app/docs/v5/fundamentals/inspector/#pre-wait) |
+| 29: [Cue](https://qlab.app/docs/v5/fundamentals/workspace/#the-cue-list) | 9: [Text cue](https://qlab.app/docs/v5/video/text-cues) | 33: [Cue name](https://qlab.app/docs/v5/fundamentals/workspace/#cue-name) | 44: [Selected cue post-wait](https://qlab.app/docs/v5/fundamentals/inspector/#post-wait) |
+| 40: [Inspector tabs](https://qlab.app/docs/v5/fundamentals/inspector) | 11: [Fade cue](https://qlab.app/docs/v5/audio/fading-audio) | 34: [Target](https://qlab.app/docs/v5/fundamentals/workspace/#target) | 45: [Selected cue continue mode](https://qlab.app/docs/v5/fundamentals/inspector/#continue) |
+| 66: [Workspace settings](https://qlab.app/docs/v5/fundamentals/workspace-settings) | 12: [Network cue](https://qlab.app/docs/v5/networking/network-cues) | 35: [Pre-wait](https://qlab.app/docs/v5/fundamentals/workspace/#pre-wait) | 46: [Selected cue name](https://qlab.app/docs/v5/fundamentals/inspector/#name) |
+| | 28: [Script cue](https://qlab.app/docs/v5/scripting/script-cues) | 36: [Duration](https://qlab.app/docs/v5/fundamentals/workspace/#duration) | 47: [Selected cue target](https://qlab.app/docs/v5/fundamentals/inspector/#target) |
+| | | 37: [Post-wait](https://qlab.app/docs/v5/fundamentals/workspace/#post-wait) | 48: [Selected cue notes](https://qlab.app/docs/v5/fundamentals/inspector/#notes) |
+| | | 38: [Continue mode](https://qlab.app/docs/v5/fundamentals/workspace/#continue-mode) | 50: [Selected cue color](https://qlab.app/docs/v5/fundamentals/inspector/#color) |
+| | | 39: [Status icon](https://qlab.app/docs/v5/fundamentals/workspace/#status) | 51: [Selected cue second color](https://qlab.app/docs/v5/fundamentals/inspector/#second-color) |
+| | | | 54: [Reveal target](https://qlab.app/docs/v5/fundamentals/inspector/#target) |
+| | | | 57: [Selected cue armed](https://qlab.app/docs/v5/fundamentals/inspector/#armed) |
+
+
+
 ## Cue Types
 
 Take a look at `Cue 1`. Note that this is a **group cue**. Think of a group cue as a *folder* that can contain other cues (including group cues), and group cues can have different modes that determine the playback behavior.
