@@ -49,7 +49,7 @@ Now we're onto actually filling in the details according to a show. We will use 
 
 Before we begin, we highlight some things below in the workspace to pay attention to. If you're already familiar with the workspace, skip ahead to the [next](index.html#title) section.
 
-{% include image.html file="workspace-diagram.png" alt="QLab5" caption="Some workspace elements. Image credit: https://qlab.app/docs/v5/fundamentals/workspace/."%}
+{% include image.html file="workspace-diagram.png" alt="QLab5" caption="Some workspace elements. Image credit: [https://qlab.app/docs/v5/fundamentals/workspace/](https://qlab.app/docs/v5/fundamentals/workspace/)."%}
 
 
 | **<span class="cr">General</span>** | **<span class="cb">Cue types</span>** | **<span class="cg">Cue list elements</span>** | **<span class="cy">Inspector elements</span>** |
@@ -67,9 +67,11 @@ Before we begin, we highlight some things below in the workspace to pay attentio
 | | | | 54: [Reveal target](https://qlab.app/docs/v5/fundamentals/inspector/#target) |
 | | | | 57: [Selected cue armed](https://qlab.app/docs/v5/fundamentals/inspector/#armed) |
 
+For our purposes, the parts that matter to us the most are the `playheads`, which controls what `cue` is being selected/pending/on standby. You can click on any cue, and that puts in into standby. To play a cue, hit `space` to play the cue on standby.
+
 #### Title
 
-First navigate to the **Text** column of the **Title** cue (cue name: `Title`; cue number: `A`). This is where you enter the appropriate information. Notice the {% include inline_image.html file="text-cue.png" alt="Text Cue" %} icon at the top of the playhead. THis indicates that it is a *text* cue, which displays its content as a static png file onto the designated output. If the template is set up correctly, you should see the static image on `input 7` of the ATEM Multiview. Check [here](/mydoc_troubleshooting.html) if you're seeing otherwise.
+First navigate to the **Text** column of the **Title** cue (cue name: `Title`; cue number: `A`). This is where you enter the appropriate information. Notice the {% include inline_image.html file="text-cue_size.png" alt="Text Cue"%} icon at the top of the playhead. This indicates that it is a *text* cue, which displays its content as a static png file onto the designated output. If the template is set up correctly, you should see the static image on `input 7` of the ATEM Multiview. Check [here](/mydoc_troubleshooting.html) if you're seeing otherwise.
 
 {% include image.html file="title-text.png" alt="QLab5" caption="Edit Title Cue" max-width="23px"%}
 
@@ -90,6 +92,15 @@ You can select the text and change its color however you desire using the `text 
 
 #### Lower-Thirds
 
+We want to give credits to all the performers that make events possible. We use lower thirds to indicate the *performers*, the *piece* they're performing, the *composer* of the piece, and any *group name* if applicable.
+
+To edit a lower third, as it is the case with all other cues in this template, the only type of cues you need to edit is a **Text** cue.
+
+
+
+
+
+#### Post-show Credits
 
 <!-- First, download or clone the theme from the [Github repo](https://github.com/tomjoht/documentation-theme-jekyll). Most likely you won't be pulling in updates once you start customizing the theme, so downloading the theme (instead of cloning it) probably makes the most sense. In Github, click the **Clone or download** button, and then click **Download ZIP**.
 
