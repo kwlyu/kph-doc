@@ -239,6 +239,20 @@ When you sit down at the broadcast booth, you will likely see the multiview on t
   {% include image.html file="atem-software.png" alt="ATEM Software" caption="ATEM Software" max-width="400" %}
 </div>
 
+On the multiview, you will see a selection of `Inputs`, along with `Preview` and `Program`. Think of program as the end result, i.e., what shows up on the recording/livestream, and preview as the ''scene'' before program. We are using 8 out of 10 inputs on the switcher. They're:
+
+| Input 1 | Input 2 | Input 3 | Input 4 | Input 5 | Input 6 | Input 7 | Input 8 | 
+| :-------- | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- |
+| House Left | House Center | House Right | Stage Right | Stage Left | Projector | QLab | Applebaum |
+
+Input 1-5 corresponds to the 5 PTZ cameras in Kracum, and Input 8 corresponds to the PTZ camera in Applebaum. Input 7 mirrors the Kracum projector output, if applicable, and Input 7 is the graphics output from QLab. 
+
+To control the switcher:
+- Press any key from `1` through `8` to bring up a particular input to `Preview`. This allows you to make any adjustments to the image before you sends it to program. 
+- Press `space` to **cut** `Preview` to `Program`; this immediately switches `Preview` and `Program`.
+- Press `return` to **dissolve** `Preview` to `Program`; this fades between `Preview` and `Program` at the rate specified below. The default rate is 1 second.
+
+{% include image.html file="atem-dissolve.png" alt="ATEM Software" caption="ATEM Dissolve" %}
 
 
 ### Sony PTZ Control
