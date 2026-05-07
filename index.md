@@ -277,7 +277,37 @@ To control the switcher:
 
 {% include important.html content="While dissolving, if you select any other input to preview, the program will eventually **dissolve to the last selected preview**. For instance, if you had input 2 on preview and input 3 on program, and while dissolving, you selected input 4 to preview, the program will be input 4 as opposed to input 2 after transition. This might happen when there's a quick transition. Just keep in mind to only select previews **after** the transition is complete." %}
 
-#### Lower Thirds
+#### Switcher Parameters
+
+| Output 1 | Output 2 | Output 3 | Output 4 | Output 5 | Output 6 |
+| :-------- | :-------- | :-------- | :-------- | :-------- | :-------- | 
+| Crestron DA | Hyperdeck Record | Preview | Output 4 | Output 5 | Output 6 | 
+
+The switcher has 6 routable outputs. We're using at least 3. 
+
+- Output 1 goes to a `Crestron` encoder that distributes broadcast video to the Lobby, Backstage, and Greenroom monitors. 
+    - During rehearsals, this is set to `QLab`, which only displays the `Title` of the event, so the video engineers can set camera presets. 
+    - About 30 to 15 minutes before show starts, this is set to `Program`, so the monitors can follow whatever the recording gets. 
+    - After the show ends, this will be automatically set to `QLab` again, displaying the calendar program for upcoming events.
+
+- Output 2 goes to our [Hyperdeck Recorder](https://www.blackmagicdesign.com/products/hyperdeckstudio/techspecs/W-HYD-11). This will always be set to `Program`.
+
+- Output 3 goes to a confidence monitor in the broadcast booth. This will follow whatever output 1 gets, so the technicians have an idea of what the audience is seeing.
+
+The rest of the outputs is defaulted to program. We sometimes use it for extra recording, a dedicated streaming feed into our [Pearl Nano](https://www.epiphan.com/products/pearl-nano/) streamer, etc.
+
+{% include important.html content="Make sure you have the **`Downstream Key`** set to the following parameters. <br>
+
+        * You may adjust the **`Clip`** and the **`Gain`** to your liking, but these just affect the transparency of the lower thirds. <br>
+
+        * The **`Rate`** for **`DSK 1`** controls the amount of time it takes to fade in/out the key; I recommend leaving this at 1 second. <br>
+
+        * The **`Rate`** under **`Transition style`** controls the fade time for **`Dissolve`**.
+" %}
+
+{% include image.html file="atem-dissolve.png" alt="ATEM Parameters" caption="Downstream Key Parameters." %}
+
+If you somehow messed up the parameters, check the `Document` folder for backup. Otherwise, download a copy [here](https://github.com/kwlyu/kph-documentation/raw/refs/heads/main/showfiles/KL%20ATEM+QLAB5%202026-05-07%2016-21-24.xml).
 
 
 ### Sony PTZ Control
