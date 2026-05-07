@@ -9,9 +9,9 @@ summary: These brief instructions will help you get started quickly with concert
 
 {% include note.html content="If you're reading this documentation, you're probably doing concert/theater of some kind. I have a <a alt='KL-youtube' href='https://www.youtube.com/@kun-wulyu8071'> YouTube Channel</a> hosting some example work. " %}
 
-## Video
+## QLab Video Graphics
 
-Follow these instructions to get started on the Video side of production.
+Follow these instructions to get started on the graphics side of production. We use [QLab](https://qlab.app/) for lower-thirds and credits, as well as video and audio playback.
 
 ### Open the template
 
@@ -54,9 +54,16 @@ If you need a refresher navigating the workspace, check [here](mydoc_qlab.html#W
 
 #### Title
 
-First navigate to the **Text** column of the **Title** cue (cue name: `Title`; cue number: `A`). This is where you enter the appropriate information. Notice the {% include inline_image.html file="text-cue_size.png" alt="Text Cue"%} icon at the top of the playhead. This indicates that it is a *text* cue, which displays its content as a static png file onto the designated output. If the template is set up correctly, you should see the static image on `input 7` of the ATEM Multiview. Check [here](/mydoc_troubleshooting.html) if you're seeing otherwise.
+First navigate to the **Text** column of the **Title** cue (cue name: `Title`; cue number: `A`). This is where you enter the appropriate information. Notice the {% include inline_image.html file="text-cue_size.png" alt="Text Cue"%} icon at the top of the playhead. This indicates that it is a *text* cue, which displays its content as a static png file onto the designated output. 
 
 {% include image.html file="title-text.png" alt="QLab5" caption="Edit Title Cue" max-width="23px"%}
+
+If the template is set up correctly, you should see the static image on `input 7` of the ATEM Multiview. Check [here](/mydoc_troubleshooting.html) if you're seeing otherwise.
+
+<video autoplay loop muted playsinline width="100%">
+  <source src="{{ '/videos/title.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 Take a look at this following program.
 
@@ -66,7 +73,7 @@ Usually, there's just enough information to fill out the titles and subtitles (o
 
 {% include image.html file="title-edit.png" alt="Title Slide" caption="Edited Title"%}
 
-You can select the text and change its color however you desire using the `text color panel`. When we livestream an event, leave the Carleton Livestream URL [go.carleton.edu/carletonlive](go.carleton.edu/carletonlive) in. Otherwise, delete the link.
+You can select the text and change its color however you desire using the `text color panel`. When we livestream an event, leave the Carleton Livestream URL [go.carleton.edu/carletonlive](go.carleton.edu/carletonlive) in. Otherwise, delete the link. Contact [Alexi Carlson](mailto:acarlson4@carleton.edu) if you don't know whether the event is being streamed or not.
 
 {% include tip.html content=" If the texts exceeds the boundaries of the output screen, rather than adjusting the font sizes individually, you can adjust the **`Scale`** of the entire cue in the **`Geometry`** tab. You can also adjust the **`Translation`** and **`Rotation`** of cues, if the properties apply. All these parameters are ''draggable'', so you don't have to enter the values manually." %}
 
@@ -94,6 +101,11 @@ You will note that I also omitted the movements. This is because the sonata only
 {% include note.html content="You can **rename** a cue by either double-clicking the `Name` tab or use the keyboard shortcut **`Q`**. The keyboard shortcut for **renumbering** is **`N`**. Cues whose cue name is empty will display its text content or filename. "%}
 
 To play this lower-third, you want to go to the top of the group cue, i.e., `Cue 1`, and hit `space`. From there, you don't need to do anything. The automation scripts will bring up the `Downstream Keys` in ATEM and the text cue you just created and take them out after a specified amount of time, i.e., 5 seconds.
+
+<video autoplay loop muted playsinline width="100%">
+  <source src="{{ '/videos/basic-lower-thirds.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 {% include important.html content="As always, check the **`Geometry`** or play the cue before show starts to make sure there's no overflow. " %}
 
@@ -136,6 +148,11 @@ The last group of this cue simply presents the first piece that the group perfor
 
 To play, you go to the top of `Cue 2` and hit `space` for go. You would use `Cue 1` to present the remaining pieces of this group that don't need to highlight new soloists. Just to illustrate, in that same program above, `Carleton Choir` performs three pieces. The first piece has a group of soloists, the second piece has no soloists (or the same group of soloists), and the third has a different group of soloists. You should use `Cue 2` for the first piece, `Cue 1` for the second piece, and `Cue 3` for the third piece, which we will introduce next.
 
+<video autoplay loop muted playsinline width="100%">
+  <source src="{{ '/videos/group-lower-thirds.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ##### 3. When there is a small group performing.
 
 As we said, when there's only a small group performing, we use `Cue 3` as a template. This is common for chamber and studio recitals, where typically there's only 1-3 students performing one or two pieces. Take a look at this following program.
@@ -150,6 +167,13 @@ As we said, when there's only a small group performing, we use `Cue 3` as a temp
 
 {% include image.html file="accents.png" alt="Accents" caption="Accents on Mac" %}
 
+Play the lower thirds by putting `Cue 3` into standby and hit `space` for go.
+
+<video autoplay loop muted playsinline width="100%">
+  <source src="{{ '/videos/solo-lower-thirds.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ##### 4. Chinese Music Ensemble.
 
 You might encounter non-Western music here at Carleton, and they often contain foreign language characters. If you know how to input them, go ahead. The Kracum QLab Mac has Simplified Chinese (Pinyin) installed; you can switch input by pressing `fn`. Otherwise, my advice is to get the program PDF, **copy** the characters, and **paste** into the template. Contact [Alexi Carlson](mailto:acarlson4@carleton.edu) if you have trouble accessing the program.
@@ -158,8 +182,46 @@ You might encounter non-Western music here at Carleton, and they often contain f
 
 {% include note.html content="You can **`Paste and Match Style`**, under the edit menu. The default keyboard shortcut is **`command+option+shift+v`**. You can define whatever keyboard shortcut you'd like; the Kracum Mac has it set to **`command+shift+v`** to match the common shortcuts. To learn how to do that, check [this Apple help article](https://support.apple.com/guide/mac-help/create-keyboard-shortcuts-for-apps-mchlp2271/mac). "%}
 
+Play the lower thirds by putting `Cue 5` into standby and hit `space` for go.
 
+<video autoplay loop muted playsinline width="100%">
+  <source src="{{ '/videos/chinese-lower-thirds.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 #### Post-show Credits
 
+Now that we've given credits to the performers, we want to give credits to ourselves 🥳. Not every event will have a program, but every event will have a `Event Info Sheet`, like the following.
 
+<embed src="{{ site.baseurl }}/pdf/3_4 Piano Studio.pdf" type="application/pdf" width="100%" height="1080px" />
+
+Here, you will find information about the schedule, the staff assigned, recording/streaming needs, and strike notes if applicable. (You find out whether the show is being streamed here.) We want to fill out the personnel's working any particular show (though there are separate text cues acknowledging all students on the roster and all staff members that have helped with the production.) You will note that this last group cue contains an unusually large amount of cues. This is because a large portion of the switching/fading has been automated to reduce repetitive workloads and to ensure consistency. The only cues you will need to edit are `Text Cues`, which are coded in `red`. 
+
+{% include image.html file="post-credit.png" alt="Credits" caption="Post Show Credits" %}
+
+`Credits 2` contains all the tech people. If there are no projectionists, simply delete the entry. 
+
+| Abbreviation | Position |
+| :--- | :--- |
+| Proj | Projection |
+| A1, A2, A3, etc. | Audio |
+| LBO | Light Board Operator |
+| Video | Video |
+| SM | Stage Manager |
+| HM | House Manager | 
+| Stage | Stage Hand |
+| U | Usher |
+| Door | Door Access (Obsolete) |
+
+{% include image.html file="post-credit-2.png" alt="Credits" caption="Tech Credits" %}
+
+`Credits 3` contains the rest of the crew, including stage managers and house managers. If there's not a position, i.e., Door Access, put them under `Usher`.
+
+{% include image.html file="post-credit-3.png" alt="Credits" caption="House Credits" %}
+
+To play the post show credits, simply go to the top of this group (named `Post - RUN THIS CUE ONLY`), and hit `space` for go. The scripts will take care of everything.
+
+<video autoplay loop muted playsinline width="100%">
+  <source src="{{ '/videos/post-credit.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
