@@ -38,7 +38,7 @@ Check [here](/mydoc_troubleshooting.html) if you see <a href="#" data-toggle="to
 
 {% include important.html content="The first thing you want to do when you open a template is to **save it as a new file**, so you don't overwrite the template. " %}
 
-To do this, go to `File` and select `Save As...`. Alternatively, press `command+shift+escape`.
+To do this, go to `File` and select `Save As...`. Alternatively, press `command+shift+s`.
 {% include image.html file="qlab-save-as.png" alt="QLab5"%}
 
 For good practice, keep the files organized in a folder with consistent naming conventions. An example of such a folder/directory is `Documents → QLab Archive → 2025-2026 → 3. S26 QLab`. An example of a workspace name is `04262026_Kingston-Recital`.
@@ -47,7 +47,10 @@ For good practice, keep the files organized in a folder with consistent naming c
 
 Now we're onto actually filling in the details according to a show. We will use several examples throughout to illustrate the different scenarios you might encounter. 
 
-If you need a refresher navigating the workspace, check [here](mydoc_qlab.html#Workspace). For our purposes, the parts that matter to us the most are the `playheads`, which controls what `cue` is being selected/pending/on standby (highlighted in blue). You can click on any cue, and that puts in into standby. To play a cue, hit `space` to play the cue on standby.
+If you need a refresher navigating the workspace, check [here](mydoc_qlab.html#Workspace). For our purposes, the parts that matter to us the most are the `playheads`, which controls what `cue` is being selected/pending/on standby (highlighted in blue). 
+* You can click to select any cue, and that puts in into standby. 
+* To play a cue, hit `space` to play the cue on standby. 
+* To stop cues, hit `escape` to ''**panic all**'' cues; this fades everything down in 1 second, making the stop seem intentional when it's not.
 
 #### Title
 
@@ -86,15 +89,58 @@ The only two performers `Susie Park` and `Timothy Lovelace` are both introduced 
 
 You will note that I also omitted the movements. This is because the sonata only contains three movements. The real-estate of a lower-third limits how much information we can put out. We only include movements when not all movements are being played. For instance, if an artist is play only the second movement, we would write `Sonata ...., Movt. II`. When there are multiple movements, we use dash to connect them: `..., Movt. I-III`.
 
+{% include image.html file="rename-q.png" alt="Rename Cue" caption="Cues without names will display text content." %}
+
+{% include note.html content="You can **rename** a cue by either double-clicking the `Name` tab or use the keyboard shortcut **`Q`**. The keyboard shortcut for **renumbering** is **`N`**. Cues whose cue name is empty will display its text content or filename. "%}
+
 To play this lower-third, you want to go to the top of the group cue, i.e., `Cue 1`, and hit `space`. From there, you don't need to do anything. The automation scripts will bring up the `Downstream Keys` in ATEM and the text cue you just created and take them out after a specified amount of time, i.e., 5 seconds.
 
+{% include important.html content="As always, check the **`Geometry`** or play the cue before show starts to make sure there's no overflow. " %}
 
-##### 2. When there is a group performing.
+##### 2. When there is a named group or a large group performing.
 
-We always introduce the group before they perform their first piece. When the group is large enough that we can't fit them into a single lower-third, we use the second template.
+We always introduce the group before they perform their first piece. When the group is large enough that we can't fit them into a single lower-third, or when the group has a group name, we use the second template. When a group is performing multiple pieces, use `Cue 2` to introduce the group and the first piece. For brevity, use `Cue 1` for the remaining pieces until a different group performs or when there's a soloist to highlight. Let's see this in action. Take a look at this program again. We want to do the lower-thirds for the first piece performed by `Carleton Voices`, i.e., `Hey Harmonika`.
 
+<embed src="{{ site.baseurl }}/pdf/11.2.25_Joint Concert Program_FINAL 3.pdf" type="application/pdf" width="100%" height="1080px" />
 
+* Group Titles
 
+Since we didn't highlight the directors in the subtitles, we put the directors here. So the first text cue under `Cue 2` will be the following. We use `|` as the delimiter between two performers; you don't need a delimiter at the end of a line. This first text cue will always contain the group title (and the director, if applicable).
+
+{% include image.html file="group-title.png" alt="Group Title" caption="Group Title with Directors" %}
+
+* Group Members
+
+The second text cue is where we fill in the group members or the soloists. For a large ensemble like choir, it is usually infeasible to list all members. In this case, we only highlight the soloists. 
+
+{% include image.html file="group-members.png" alt="Group Members" caption="Group Members" %}
+
+- There are a few scenarios where you don't need this second group of cues.
+    - If there are no soloists, you can delete the second group cue. 
+    - If there are too many people in the ensemble to list completely, my advice is to not list anyone at all; in this case, you can also delete the second group cue.
+    - If there are very few soloists (1-4 artists) that you think you can fit under the first text cue, go ahead and do that and delete the second group cue.
+
+{% include image.html file="no-group-members.png" alt="No Group Members" caption="Delete Group Members Cue" %}
+
+- If you're feeling adventurous, you **can** list all members in an ensemble. Here's how you do it.
+    - Select all cues in the second group like above, and copy with `command+c`.
+    - Go to the top of this group and paste with `command+v`. The reason you want to paste at the top of the cue is because otherwise the pasted group will be *nested* inside the original group. 
+
+{% include image.html file="group-members-duplicate.png" alt="Duplicate Group Members" caption="Duplicate Group Members Cue" %}
+
+* The first piece
+
+The last group of this cue simply presents the first piece that the group performs. Note that the text cue is identical to that under `Cue 1`. Follow the instructions above to fill in the details.
+
+{% include image.html file="group-piece.png" alt="Group Piece" caption="Group First Piece" %}
+
+To play, you go to the top of `Cue 2` and hit `space` for go. You would use `Cue 1` to present the remaining pieces of this group that don't need to highlight new soloists. Just to illustrate, in that same program above, `Carleton Choir` performs three pieces. The first piece has a group of soloists, the second piece has no soloists (or the same group of soloists), and the third has a different group of soloists. You should use `Cue 2` for the first piece, `Cue 1` for the second piece, and `Cue 3` for the third piece, which we will introduce next.
+
+##### 3. When there is a small group performing.
+
+As we said, when there's only a small group performing, we use `Cue 3` as a template. This is common for chamber and studio recitals, where typically there's only 1-3 students performing one or two pieces. Take a look at this following program.
+
+<embed src="{{ site.baseurl }}/pdf/3.4.26_Piano Studio Recital Program_FINAL.pdf" type="application/pdf" width="100%" height="1080px" />
 
 #### Post-show Credits
 
