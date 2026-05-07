@@ -230,6 +230,8 @@ To play the post show credits, simply go to the top of this group (named `Post -
 
 ### ATEM Software Control
 
+#### Switching Basics
+
 We use [ATEM Software Control](https://www.blackmagicdesign.com/products/atemmini/software) to control the Blackmagic switchers in our spaces. We'll use the main switcher, [ATEM 1 M/E Constellation HD](https://www.blackmagicdesign.com/products/atemconstellation/techspecs/W-APS-25), as our example.
 
 When you sit down at the broadcast booth, you will likely see the multiview on the monitor, and the ATEM software on the ATEM laptop.
@@ -250,9 +252,32 @@ Input 1-5 corresponds to the 5 PTZ cameras in Kracum, and Input 8 corresponds to
 To control the switcher:
 - Press any key from `1` through `8` to bring up a particular input to `Preview`. This allows you to make any adjustments to the image before you sends it to program. 
 - Press `space` to **cut** `Preview` to `Program`; this immediately switches `Preview` and `Program`.
+
+<video autoplay loop muted playsinline width="100%">
+  <source src="{{ '/videos/atem-cut.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 - Press `return` to **dissolve** `Preview` to `Program`; this fades between `Preview` and `Program` at the rate specified below. The default rate is 1 second.
 
-{% include image.html file="atem-dissolve.png" alt="ATEM Software" caption="ATEM Dissolve" %}
+<!-- Container to hold the videos side-by-side -->
+<div style="display: flex; gap: 10px; justify-content: center; align-items: start;">
+
+  <video autoplay loop muted playsinline style="width: 49%; height: auto;">
+    <source src="{{ '/videos/atem-dissolve2.mp4' | relative_url }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <video autoplay loop muted playsinline style="width: 49%; height: auto;">
+    <source src="{{ '/videos/atem-software-dissolve2.mp4' | relative_url }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+</div>
+
+{% include important.html content="While dissolving, if you select any other input to preview, the program will eventually **dissolve to the last selected preview**. For instance, if you had input 2 on preview and input 3 on program, and while dissolving, you selected input 4 to preview, the program will be input 4 as opposed to input 2 after transition. This might happen when there's a quick transition. Just keep in mind to only select previews **after** the transition is complete." %}
+
+#### Lower Thirds
 
 
 ### Sony PTZ Control
