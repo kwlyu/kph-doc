@@ -58,7 +58,7 @@ First navigate to the **Text** column of the **Title** cue (cue name: `Title`; c
 
 {% include image.html file="title-text.png" alt="QLab5" caption="Edit Title Cue" max-width="23px"%}
 
-If the template is set up correctly, you should see the static image on `input 7` of the ATEM Multiview. Check [here](/mydoc_troubleshooting.html) if you're seeing otherwise.
+If the template is set up correctly, you should see the static image on `input 7` of the ATEM Multiview. Check [here](/mydoc_troubleshooting.html) if you're seeing otherwise. (You multiview will not look like this. I'm using the multiview here to show you both the QLab progress bars and the program output.)
 
 <video autoplay loop muted playsinline width="100%">
   <source src="{{ '/videos/title.mp4' | relative_url }}" type="video/mp4">
@@ -225,3 +225,23 @@ To play the post show credits, simply go to the top of this group (named `Post -
   <source src="{{ '/videos/post-credit.mp4' | relative_url }}" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+## Video Switching
+
+### ATEM Software Control
+
+We use [ATEM Software Control](https://www.blackmagicdesign.com/products/atemmini/software) to control the Blackmagic switchers in our spaces. We'll use the main switcher, [ATEM 1 M/E Constellation HD](https://www.blackmagicdesign.com/products/atemconstellation/techspecs/W-APS-25), as our example.
+
+When you sit down at the broadcast booth, you will likely see the multiview on the monitor, and the ATEM software on the ATEM laptop.
+
+<div style="display: flex; gap: 15px; align-items: flex-start;">
+  {% include image.html file="multiview.png" alt="Multiview" caption="ATEM Multiview" max-width="400" %}
+  {% include image.html file="atem-software.png" alt="ATEM Software" caption="ATEM Software" max-width="400" %}
+</div>
+
+
+
+### Sony PTZ Control
+
+## Broadcast Audio
+

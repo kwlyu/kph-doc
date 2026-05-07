@@ -1,5 +1,5 @@
 ---
-title: Alerts
+title: QLab
 tags: [formatting]
 keywords: notes, tips, cautions, warnings, admonitions
 last_updated: May 6, 2026
