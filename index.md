@@ -142,6 +142,24 @@ As we said, when there's only a small group performing, we use `Cue 3` as a temp
 
 <embed src="{{ site.baseurl }}/pdf/3.4.26_Piano Studio Recital Program_FINAL.pdf" type="application/pdf" width="100%" height="1080px" />
 
+`Joshua Lee` is performing one piece. In particular, through Googling, only the first movement. We abbreviate it like the following. 
+
+{% include image.html file="solo-piece.png" alt="Solo Piece" caption="Solo Piece" %}
+
+{% include note.html content="You will note that the composer of this piece contains special characters. To input accents on Mac, hold **`option`** can type the letter associated with that accent, listed in the following image. For more information, check [this Apple help article](https://support.apple.com/guide/pages/accents-emoji-and-special-characters-tanec2c2fdfd/mac). "%}
+
+{% include image.html file="accents.png" alt="Accents" caption="Accents on Mac" %}
+
+##### 4. Chinese Music Ensemble.
+
+You might encounter non-Western music here at Carleton, and they often contain foreign language characters. If you know how to input them, go ahead. The Kracum QLab Mac has Simplified Chinese (Pinyin) installed; you can switch input by pressing `fn`. Otherwise, my advice is to get the program PDF, **copy** the characters, and **paste** into the template. Contact [Alexi Carlson](mailto:acarlson4@carleton.edu) if you have trouble accessing the program.
+
+{% include image.html file="chinese-piece.png" alt="Chinese" caption="Chinese Music Ensemble" %}
+
+{% include note.html content="You can **`Paste and Match Style`**, under the edit menu. The default keyboard shortcut is **`command+option+shift+v`**. You can define whatever keyboard shortcut you'd like; the Kracum Mac has it set to **`command+shift+v`** to match the common shortcuts. To learn how to do that, check [this Apple help article](https://support.apple.com/guide/mac-help/create-keyboard-shortcuts-for-apps-mchlp2271/mac). "%}
+
+
+
 #### Post-show Credits
 
 
