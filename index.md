@@ -309,10 +309,52 @@ The rest of the outputs is defaulted to program. We sometimes use it for extra r
 
 If you somehow messed up the parameters, check the `Document` folder for backup. Otherwise, download a copy [here](https://github.com/kwlyu/kph-documentation/raw/refs/heads/main/showfiles/KL%20ATEM+QLAB5%202026-05-07%2016-21-24.xml).
 
+#### Recording and Streaming
+
+This part only applies to the ATEM Mini in Applebaum. You can ISO recording all inputs and outputs to an external drive through the USB-C port at the back of the ATEM. The `Record` button will show up on the right under output once the drive is plugged in. You may also stream to Carleton's IBM RTMP server. Refer to the `Stream Keys` document for details about the server and the key. We don't recommend streaming via any Blackmagic devices, because of [this](https://forum.blackmagicdesign.com/viewtopic.php?f=4&t=117185) issue here. Instead, see [this section](/index.html#recording-and-streaming-1) on how to set up recording and streaming.
+
+{% include image.html file="atem-mini.png" alt="ATEM Mini" caption="ATEM Mini Record and Stream." %}
 
 ### Sony PTZ Control
+
+We use Sony's [RM-IP500](https://www.sony.com/electronics/support/ptz-and-remote-cameras-ptz-cameras/rm-ip500) to control the 6 [Sony PTZ Cameras](https://pro.sony/ue_US/products/ptz-network-cameras/srg-300se) we have in our space. 
+
+{% include image.html file="ptz-ctrl-top.png" alt="Sony PTZ" caption="Sony PTZ Control" %}
+
+{% include important.html content="Note that the camera selection in PTZ control is **separate** from the input selection in ATEM. To control a camera that's been put on `Preview`, you have to **first select the correct `Input` on the ATEM computer AND select the correct `Camera` on the PTZ control**. PTZ control and ATEM are separated. " %}
+
+#### Selecting a camera
+
+You can select the camera you want to control using the `Camera Selection Block`. Camera 1-5 corresponds to Input 1-5 on the ATEM, and Camera 6 is the Applebaum camera (Input 8). If the network is set up correctly, the `buttons` for camera 1-6 should light in <span class="cb">blue</span>. Press the number of the CAMERA button to select. The selected button will light in <span class="cy">yellow</span>.
+
+#### Operating a camera
+
+##### Pan and tilt control
+
+1. Select the target camera to control.
+2. Make sure the ACTIVE button is lit on the joystick control block.
+3. Adjust the PAN-TILT SPEED. Turning the PAN-TILT SPEED knob clockwise increases the speed, and turning counterclockwise decreases the speed.
+4. Incline to the right/left to pan camera to the right/left. Push the joystick down to move the camera down, and pull the joystick up to move the camera up.
+
+{% include image.html file="pan-tilt.png" alt="Sony PTZ" caption="Pan-Tilt Control" %}
+
+##### Zoom control
+
+1. Select the target camera to control.
+2. Make sure the ACTIVE button is lit on the lens control block.
+3. Move the ZOOM lever left/right to make the subject appear smaller/larger.
+4. Adjust the ZOOM SPEED as needed. Turning the ZOOM SPEED knob clockwise increases the zoom speed, and turning counterclockwise decreases the zoom speed.
+
+{% include image.html file="zoom.png" alt="Sony PTZ" caption="Zoom Control" %}
+
+##### Adjusting the focus
+
 
 
 
 ## Broadcast Audio
 
+
+## Broadcast Video
+
+## Recording and Streaming

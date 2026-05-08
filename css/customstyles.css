@@ -18,8 +18,8 @@ body {
 }
 
 /* Specific Color Definitions */
-.cr { background-color: #E6614F; color: black; } /* Red (General) */
-.cb { background-color: #5D72E1; color: black; } /* Blue (Cue Types) */
+.cr { background-color: #E6614F; color: white; } /* Red (General) */
+.cb { background-color: #5D72E1; color: white; } /* Blue (Cue Types) */
 .cg { background-color: #5DD14F; color: black; } /* Green (Cue List) */
 .cy { background-color: #F8E755; color: black; } /* Yellow (Inspector) */
 
