@@ -401,7 +401,7 @@ We recommend this because it saves you a lot of time during the show. For this r
 
 ## Broadcast Audio
 
-We use the 
+We use the [Yamaha QL1](https://usa.yamaha.com/products/proaudio/mixers/ql_series/index.html) as our broadcast audio mixer. 
 
 ## Recording and Streaming
 

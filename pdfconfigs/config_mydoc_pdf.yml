@@ -1,10 +1,10 @@
 destination: _site/
-url: "http://127.0.0.1:4010"
-baseurl: "/mydoc-pdf"
-port: 4010
-product: mydoc
-print_title: Jekyll theme for documentation — mydoc product
-print_subtitle: version 6.0
+url: "http://127.0.0.1:4000"
+baseurl: "/kph-doc-pdf"
+port: 4000
+product: kph-doc
+print_title: Technical Documentation for Kracum Performance Hall
+print_subtitle: Kunwu Lyu
 output: pdf
 defaults:
   -
