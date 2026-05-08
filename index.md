@@ -401,7 +401,9 @@ We recommend this because it saves you a lot of time during the show. For this r
 
 ## Broadcast Audio
 
-
-## Broadcast Video
+We use the 
 
 ## Recording and Streaming
+
+
+## Broadcast Video
