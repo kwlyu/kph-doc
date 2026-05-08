@@ -349,7 +349,54 @@ You can select the camera you want to control using the `Camera Selection Block`
 
 ##### Adjusting the focus
 
+1. Select the target camera to control.
+2. Make sure the ACTIVE button is lit on the lens control block.
+3. Leave the mode on AUTO FOCUS, making sure the button is lit yellow.
 
+{% include image.html file="focus.png" alt="Sony PTZ" caption="Focus Control" %}
+
+##### Adjusting the brightness
+
+We don't recommend the auto-exposure (AE) function. It simply looks bad.
+
+1. Make sure the AE button is off (button is not lit).
+2. Turn the IRIS knob counterclockwise until the iris is all the way up (F=1.6, lower is better).
+3. Press the GAIN button in the menu control block to highlight the corresponding value on the camera image and turn the VALUE knob to adjust the value.
+
+{% include image.html file="brightness.png" alt="Sony PTZ" caption="Brightness Control" %}
+
+By opening up the iris to its max setting, we're letting as much light into the camera as possible. This reduces the level of noise in our video.
+
+#### Storing the Camera Presets
+
+All camera parameters we just mentioned can be stored as presets to recall during the show. 
+
+1. Make sure the ACTIVE button is on (button is lit) on the joystick control block and preset memory control block.
+2. Select the camera whose status you want to store.
+3. Operate the joystick to pan/tilt the orientation of the camera.
+4. Perform zoom, focus, backlight compensation, flicker compensation, and white/black balance adjustments, as required.
+5. Check that the DIRECT RECALL button is off.
+6. Enter the preset number you want to store. Use the PRESET 10/0 button to enter a “0” digit. You can store up to 100 presets per camera.
+7. Press and hold the STORE button. The preset number at the bottom right of the LCD panel is displayed highlighted, and storing is completed when the display disappears.
+
+{% include image.html file="store-preset.png" alt="Sony PTZ" caption="Storing Presets" %}
+
+##### Recalling presets
+
+There are two methods for recalling stored status: direct recall and number recall.
+
+* Direct recall
+
+1. Make sure the DIRECT RECALL button is on (button is lit yellow).
+2. Press the PRESET 1 to PRESET 10/0 buttons to recall preset numbers 1 to 10. **Only preset numbers 1 to 10 can be recalled using direct recall**. 
+
+We recommend this because it saves you a lot of time during the show. For this reason, we suggest you limit and store your presets to 1-10.
+
+* Number recall
+
+1. Make sure the DIRECT RECALL button is off (button is NOT lit yellow).
+2. Enter the preset number using the PRESET 1 to PRESET 10/0 buttons, in the same way as when storing a preset.
+3. Press the RECALL button. Preset numbers 1 to 100 can be recalled using number recall.
 
 
 ## Broadcast Audio
