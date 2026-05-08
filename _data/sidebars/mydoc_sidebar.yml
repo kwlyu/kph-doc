@@ -28,6 +28,18 @@ entries:
       output: web, pdf
       type: homepage
 
+    - title: QLab Video Graphics
+      url: /mydoc_vid-graphics.html
+      output: web, pdf
+
+    - title: ATEM Software Control
+      url: /mydoc_atem-ctrl.html
+      output: web, pdf
+
+    - title: Sony PTZ Control
+      url: /mydoc_ptz.html
+      output: web, pdf
+
     - title: Support
       url: /mydoc_support.html
       output: web, pdf
