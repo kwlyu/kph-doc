@@ -7,7 +7,7 @@ permalink: index.html
 summary: These brief instructions will help you get started quickly with concert production in Kracum and beyond. The other topics on the side help provide additional information and detail about working with other aspects of technical theater.
 ---
 
-{% include note.html content="If you're reading this documentation, you're probably doing concert/theater of some kind. I have a <a alt='KL-youtube' href='https://www.youtube.com/@kun-wulyu8071'> YouTube Channel</a> hosting some example work. " %}
+{% include note.html content="If you're reading this documentation, you're probably doing concert/theater of some kind. I have a <a alt='KL-youtube' href='https://www.youtube.com/@kwlyu'> YouTube Channel</a> hosting some example work. " %}
 
 
 
