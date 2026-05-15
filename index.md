@@ -3,7 +3,7 @@ title: "Technical Documentation for Kracum Performance Hall"
 keywords: homepage
 tags: [getting_started]
 sidebar: mydoc_sidebar
-permalink: /encrypted/index.html
+permalink: index.html
 simple_map: true
 map_name: usermap
 box_number: 0
