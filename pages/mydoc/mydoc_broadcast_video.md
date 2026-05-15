@@ -15,7 +15,7 @@ folder: mydoc
 
 ## Preshow checklist
 
-
+By this point, you should be able to start a show. Typically, this is what a 
 
 
 ## Recording and Streaming
