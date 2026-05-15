@@ -14,11 +14,10 @@ summary: These brief instructions will help you get started quickly with concert
 
 
 
-## Tech Basics
 
-### Parts of a Theater
+## Parts of a Theater
 
-#### Stage
+### Stage
 
 The area where the performance takes place is referred to as the **stage**. We refer to the stage from the perspectives of the performers.
 
@@ -26,11 +25,11 @@ The area where the performance takes place is referred to as the **stage**. We r
 
 The area of the stage furthest from the audience is **upstage**, and the closest is **downstage**. The area of the stage to the *performer*'s left is **stage left**, and to the *performer*'s right is **stage right**. The area surrounding the playing space not visible to the audience is **backstage** or **offstage**.
 
-#### House
+### House
 
 The house is any area that is not backstage or onstage. Typically, this refers to anywhere the audience is seated. Therefore, the house positions are in the perpectives of the audience. **House Left** is the audience's left, and **House Right** is the audience's right. (For a typically proscenium stage, House Left is in front of Stage Right.)
 
-##### Front of House
+#### Front of House
 
 This is a broad category that can contain multiple positions:
 

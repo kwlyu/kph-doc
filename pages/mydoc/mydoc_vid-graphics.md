@@ -3,7 +3,7 @@ title: QLab Video Graphics
 keywords: documentation theme, jekyll, technical writers, help authoring tools, hat replacements
 last_updated: May 8, 2026
 tags: [getting_started]
-summary: "Follow these instructions to get started on the graphics side of production. We use [QLab](https://qlab.app/) for lower-thirds and credits, as well as video and audio playback."
+summary: "Follow these instructions to get started on the graphics side of production. We use QLab for lower-thirds and credits, as well as video and audio playback."
 sidebar: mydoc_sidebar
 simple_map: true
 map_name: usermap
@@ -51,7 +51,7 @@ If you need a refresher navigating the workspace, check [here](mydoc_qlab.html#W
 * To play a cue, hit `space` to play the cue on standby. 
 * To stop cues, hit `escape` to ''**panic all**'' cues; this fades everything down in 1 second, making the stop seem intentional when it's not.
 
-### Title
+## Title
 
 First navigate to the **Text** column of the **Title** cue (cue name: `Title`; cue number: `A`). This is where you enter the appropriate information. Notice the {% include inline_image.html file="text-cue_size.png" alt="Text Cue"%} icon at the top of the playhead. This indicates that it is a *text* cue, which displays its content as a static png file onto the designated output. 
 
@@ -79,11 +79,11 @@ You can select the text and change its color however you desire using the `text 
 {% include image.html file="title-geometry.png" alt="Title Geometry" caption="Edit Cue Geometry"%}
 
 
-### Lower-Thirds
+## Lower-Thirds
 
 We want to give credits to all the performers that make events possible. We use lower thirds to indicate the *performers*, the *piece* they're performing, the *composer* of the piece, and any *group name* if applicable. There are a few different types of lower thirds, and we use them according to which scenario we encounter:
 
-#### 1. When there's only one artist performing the concert, or when the artist or group has been introduced at a previous lower-third.
+### 1. When there's only one artist performing the concert, or when the artist or group has been introduced at a previous lower-third.
 
 Typically, when there's only one artist performing, their name is introduced in the title or the subtitle. We avoid redundancy here by only introducing the piece they perform and the composer of that piece. (Similarly for when a group has been introduced.) Take a look at the following program.
 
@@ -108,7 +108,7 @@ To play this lower-third, you want to go to the top of the group cue, i.e., `Cue
 
 {% include important.html content="As always, check the **`Geometry`** or play the cue before show starts to make sure there's no overflow. " %}
 
-#### 2. When there is a named group or a large group performing.
+### 2. When there is a named group or a large group performing.
 
 We always introduce the group before they perform their first piece. When the group is large enough that we can't fit them into a single lower-third, or when the group has a group name, we use the second template. When a group is performing multiple pieces, use `Cue 2` to introduce the group and the first piece. For brevity, use `Cue 1` for the remaining pieces until a different group performs or when there's a soloist to highlight. Let's see this in action. Take a look at this program again. We want to do the lower-thirds for the first piece performed by `Carleton Voices`, i.e., `Hey Harmonika`.
 
@@ -152,7 +152,7 @@ To play, you go to the top of `Cue 2` and hit `space` for go. You would use `Cue
   Your browser does not support the video tag.
 </video>
 
-#### 3. When there is a small group performing.
+### 3. When there is a small group performing.
 
 As we said, when there's only a small group performing, we use `Cue 3` as a template. This is common for chamber and studio recitals, where typically there's only 1-3 students performing one or two pieces. Take a look at this following program.
 
@@ -173,7 +173,7 @@ Play the lower thirds by putting `Cue 3` into standby and hit `space` for go.
   Your browser does not support the video tag.
 </video>
 
-#### 4. Chinese Music Ensemble.
+### 4. Chinese Music Ensemble.
 
 You might encounter non-Western music here at Carleton, and they often contain foreign language characters. If you know how to input them, go ahead. The Kracum QLab Mac has Simplified Chinese (Pinyin) installed; you can switch input by pressing `fn`. Otherwise, my advice is to get the program PDF, **copy** the characters, and **paste** into the template. Contact [Alexi Carlson](mailto:acarlson4@carleton.edu) if you have trouble accessing the program.
 
@@ -188,7 +188,7 @@ Play the lower thirds by putting `Cue 5` into standby and hit `space` for go.
   Your browser does not support the video tag.
 </video>
 
-### Post-show Credits
+## Post-show Credits
 
 Now that we've given credits to the performers, we want to give credits to ourselves 🥳. Not every event will have a program, but every event will have a `Event Info Sheet`, like the following.
 

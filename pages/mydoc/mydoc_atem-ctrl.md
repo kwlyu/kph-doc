@@ -3,7 +3,7 @@ title: ATEM Software Control
 tags: [formatting]
 keywords: notes, tips, cautions, warnings, admonitions
 last_updated: July 3, 2016
-summary: "You can insert notes, tips, warnings, and important alerts in your content. These notes make use of Bootstrap styling and are available through data references such as site.data.alerts.note."
+summary: "Select [1] - [8] to bring inputs to preview. Hit [space] for cuts, and use [return] for dissolves."
 sidebar: mydoc_sidebar
 simple_map: true
 map_name: usermap
@@ -23,6 +23,8 @@ When you sit down at the broadcast booth, you will likely see the multiview on t
   {% include image.html file="atem-software.png" alt="ATEM Software" caption="ATEM Software" max-width="400" %}
 </div>
 
+### Inputs 
+
 On the multiview, you will see a selection of `Inputs`, along with `Preview` and `Program`. Think of program as the end result, i.e., what shows up on the recording/livestream, and preview as the ''scene'' before program. We are using 8 out of 10 inputs on the switcher. They're:
 
 | Input 1 | Input 2 | Input 3 | Input 4 | Input 5 | Input 6 | Input 7 | Input 8 | 
@@ -30,6 +32,9 @@ On the multiview, you will see a selection of `Inputs`, along with `Preview` and
 | House Left | House Center | House Right | Stage Right | Stage Left | Projector | QLab | Applebaum |
 
 Input 1-5 corresponds to the 5 PTZ cameras in Kracum, and Input 8 corresponds to the PTZ camera in Applebaum. Input 7 mirrors the Kracum projector output, if applicable, and Input 7 is the graphics output from QLab. 
+
+
+### Transitions
 
 To control the switcher:
 - Press any key from `1` through `8` to bring up a particular input to `Preview`. This allows you to make any adjustments to the image before you sends it to program. 
@@ -61,6 +66,8 @@ To control the switcher:
 
 ## Switcher Parameters
 
+### Outputs
+
 | Output 1 | Output 2 | Output 3 | Output 4 | Output 5 | Output 6 |
 | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- | 
 | Crestron DA | Hyperdeck Record | Preview | Output 4 | Output 5 | Output 6 | 
@@ -77,6 +84,8 @@ The switcher has 6 routable outputs. We're using at least 3.
 - Output 3 goes to a confidence monitor in the broadcast booth. This will follow whatever output 1 gets, so the technicians have an idea of what the audience is seeing.
 
 The rest of the outputs is defaulted to program. We sometimes use it for extra recording, a dedicated streaming feed into our [Pearl Nano](https://www.epiphan.com/products/pearl-nano/) streamer, etc.
+
+### Keys
 
 {% include important.html content="Make sure you have the **`Downstream Key`** set to the following parameters. <br>
 

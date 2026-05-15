@@ -3,7 +3,7 @@ title: Broadcast Audio
 tags: [formatting]
 keywords: notes, tips, cautions, warnings, admonitions
 last_updated: July 3, 2016
-summary: "You can insert notes, tips, warnings, and important alerts in your content. These notes make use of Bootstrap styling and are available through data references such as site.data.alerts.note."
+summary: "Bring faders to unity and adjust the analog gain. Keep levels between -20dB to -10dB."
 sidebar: mydoc_sidebar
 simple_map: true
 map_name: usermap
@@ -12,15 +12,15 @@ permalink: mydoc_broadcast_audio.html
 folder: mydoc
 ---
 
-## Broadcast Audio
-
 We use the [Yamaha QL1](https://usa.yamaha.com/products/proaudio/mixers/ql_series/index.html) as our broadcast audio mixer. 
 
 {% include image.html file="ql1.jpeg" alt="QL 1" caption="QL 1" %}
 
-### Patching
+## Patching
 
 The QL1 receives (and can transmit) audio signal via [Dante](https://www.getdante.com/), as it is with all audio devices in our space. By default, it has the following patches:
+
+### Inputs
 
 | Input 1 | Input 2 | Input 3 | Input 4 | Input 5 | Input 6 | Input 7 | Input 8 | 
 | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- |
@@ -45,9 +45,11 @@ Inputs 9-16 are inputs for Applebaum, though they can be used for other purposes
 - Inputs 5 is the Applebaum podium mic.
 - Inputs 7-8 are the HDMI audio going to the Applebaum projector.
 
+### Outputs
+
 All inputs send to the **STEREO** bus, which goes to our ATEM switcher. The **MONITOR** outputs to a pair of stereo speakers in the broadcast booth; it outputs identical but separate audio as the STEREO bus. If you have more questions about the broadcast audio topology, contact [Matthew Zimmerman](mailto:mzimmerman@carleton.edu).
 
-### Adjusting the Analog Gain
+## Adjusting the Analog Gain
 
 You want to set the levels before you start any recording. This is done during rehearsals. 
 
@@ -60,7 +62,7 @@ You want to set the levels before you start any recording. This is done during r
 
 - Adjust the gain level for other channels in the same way, by pressing their **SEL** keys, and then rotating the **GAIN** knobs.
 
-### Sending an input channel signal to the STEREO bus
+## Sending an input channel signal to the STEREO bus
 
 {% include image.html file="ql1-display.png" alt="QL 1" caption="Selected Channel Display" %}
 
@@ -77,6 +79,8 @@ You want to set the levels before you start any recording. This is done during r
 6. Raise the fader of the currently selected input channel to an appropriate volume. Ideally, the stereo levels should be in the -10dB to -20dB range. Turn down the gain if the mic starts clipping, i.e., meter level is **OVER**.
 
 7. Turn on the **ON** key of the **MONITOR** channel, and raise the MONITOR fader to an appropriate volume.
+
+### No sound?
 
 At this point, you should hear sound from the booth speakers. If you don’t hear sound, check whether the L/R meters are moving in the METER field of the **QL**.
 
