@@ -40,6 +40,14 @@ entries:
       url: /mydoc_ptz.html
       output: web, pdf
 
+    - title: Broadcast Audio
+      url: /mydoc_broadcast_audio.html
+      output: web, pdf
+
+    - title: Broadcast Video
+      url: /mydoc_broadcast_video.html
+      output: web, pdf
+
     - title: Support
       url: /mydoc_support.html
       output: web, pdf

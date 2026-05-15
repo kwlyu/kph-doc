@@ -5,6 +5,9 @@ last_updated: May 8, 2026
 tags: [getting_started]
 summary: "Follow these instructions to get started on the graphics side of production. We use [QLab](https://qlab.app/) for lower-thirds and credits, as well as video and audio playback."
 sidebar: mydoc_sidebar
+simple_map: true
+map_name: usermap
+box_number: 1
 permalink: mydoc_vid-graphics.html
 folder: mydoc
 ---
