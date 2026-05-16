@@ -27,7 +27,7 @@ To get out of Firefox, simply press `command+q` (shortcut to quit apps on MacOS 
 
 Sometimes this happens after a power outage where everything is power-cycled. The ATEM switcher or the laptop controlling the ATEM refreshes its `Downstream Key` settings. Make sure the `Donstream Key` has the following settings:
 
-{% include callout.html content="
+<!-- {% include callout.html content="
 Fill Source:  **QLAB** <br>
 Key Source:   **QLAB** <br>
 Top Mask:     **-6** <br>
@@ -36,6 +36,25 @@ Left Mask:    **-16** <br>
 Right Mask:   **16** <br>
 Clip:   **0%** <br>
 Gain:   **40%** 
- " type="danger" %} 
+ " type="danger" %}  -->
+
+
+<style>
+td, th {
+   border: none!important;
+}
+</style>
+
+| Fill Source | **QLAB** |
+| Key Source | **QLAB** |
+|Top Mask | **-6** |
+|Bottom Mask | **-9** |
+| Left Mask | **-16** |
+| Right Mask | **16** |
+| Clip | **0%** |
+| Gain | **40%** |
 
 {% include image.html file="atem-dissolve.png" alt="Downstream Key" caption="Downstream Key Parameters" %}
+
+
+
