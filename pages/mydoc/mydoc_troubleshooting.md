@@ -57,4 +57,40 @@ td, th {
 {% include image.html file="atem-dissolve.png" alt="Downstream Key" caption="Downstream Key Parameters" %}
 
 
+###  QLab credits aren't playing
 
+<video autoplay loop muted playsinline width="100%">
+  <source src="{{ '/videos/qlab-mult-workspace.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+This is an instance where there might be multiple QLab workspaces open, and the program is having trouble discerning which workspace to prioritize. Close any additional workspace and trigger the cue again.
+
+
+
+
+
+## Sound isn't working
+
+### No sound?
+
+At this point, you should hear sound from the booth speakers. If you don’t hear sound, check whether the L/R meters are moving in the METER field of the **QL**.
+
+- If the L/R meters are moving on **BOTH the QL and the ATEM**:
+
+It may be that the **MONITOR** channel hasn't been turned on. Make sure you're actually in **SCENE A**, and the Master section has **ST L** and **MONIT** as opposed to **ST L** and **MONO**. You're likely in **SCENE B** if you see **MONO**. In that case, Press the **1–32** key and **MIX/MATRIX** key simultaneously to switch between fader bank A and custom fader bank B.
+
+{% include image.html file="ql1-fader-select.png" alt="QL 1" caption="Fader Bank Select Keys" %}
+
+- If the L/R meters are moving on **the QL BUT NOT the ATEM**:
+
+It may be that the Aux cable behind the ATEM got detached, or that the connection has come loose somewhere along the snake. Check the STEREO connection in the back.
+
+- If the L/R meters are not moving:
+
+Make sure that signals are being routed correctly to the patched input channels.
+
+
+### I can't move the faders
+
+This is because the console is locked. If you see a black console screen with `CONSOLE LOCK` text on it, touch anywhere on the touchscreen to unlock. Then proceed with production.
