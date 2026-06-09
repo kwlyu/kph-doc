@@ -14,7 +14,7 @@ folder: mydoc
 
 ## Recording and Streaming
 
-
+We use an [Blackmagic Hyperdeck Studio Mini](https://www.blackmagicdesign.com/products/hyperdeckstudio/techspecs/W-HYD-11) as our recorder. It takes SDI input from `output 2` of the Constellation switcher, which is always set to `Program`.
 
 
 ## Preshow checklist

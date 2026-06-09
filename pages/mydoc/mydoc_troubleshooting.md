@@ -57,6 +57,11 @@ td, th {
 {% include image.html file="atem-dissolve.png" alt="Downstream Key" caption="Downstream Key Parameters" %}
 
 
+If after configuring the ATEM, the lower thirds are still not displaying on the program, the next step is to check the QLab settings. Click the gear icon at the bottom right of the QLab window, or click `cmd+,` to bring up the settings menu. Go to network, and you should see the network connections configured like the following.
+
+{% include image.html file="qlab-network.png" alt="QLab Network Settings" caption="QLab Network Settings" %}
+
+
 ###  QLab credits aren't playing
 
 <video autoplay loop muted playsinline width="100%">
@@ -146,7 +151,7 @@ This switch determines whether the hex setting of the UNIT ID Switch will range 
 
 - Switch 2 and 3 (IP Select Mode)
 
-These switches specify (basically) the ranges/type of IP addresses used when communicating.
+These switches specify (basically) the ranges/type of IP addresses used when communicating. This is what we were having trouble with before.
 
 {% include image.html file="rio-dip-23.png" alt="RIO Dip Switches" caption="RIO Dip Switches" %}
 
@@ -162,3 +167,38 @@ Lastly, you can always set IP's statically.
 
 {% include image.html file="rio-dip-4.png" alt="RIO Dip Switches" caption="RIO Dip Switches" %}
 
+For places with a dedicated secondary Dante network (i.e., Kracum), you want to have the switch on redundant mode. For places without a secondary network (Appleabaum), it's best to leave this on daisy chain mode. 
+
+Always check if you have a secondary network in place. If you daisy chain two separate networks together when they're not supposed to, you can create a broadcast (network) storm. This is true for consoles as well. Make sure they're set to redundant mode when they have a redundant network connected.
+
+- Switches 5 and 6 (Remote)
+
+Set this to NATIVE since we only use Yamaha consoles.
+
+{% include image.html file="rio-dip-56.png" alt="RIO Dip Switches" caption="RIO Dip Switches" %}
+
+- Switches 7 and 8 (Start up)
+
+You can leave this the way it is. Whenever you recall a scene on a console, you'll recall the headamp settings, so it's not a huge deal if the headamp gets refreshed.
+
+{% include image.html file="rio-dip-78.png" alt="RIO Dip Switches" caption="RIO Dip Switches" %}
+
+
+
+
+
+## I can't see the NAS
+
+On the Mac you wish to connect to the NAS, go to `Finder`, hit `cmd+k`. You should see the following.
+
+{% include image.html file="smb.png" alt="Mount Network Drive" caption="Mounting Network Drives" %}
+
+Enter this [smb://colossus.its.carleton.edu/kracum](smb://colossus.its.carleton.edu/kracum) into the address bar. It'll then ask you to authenticate:
+
+{% include image.html file="smb-login.png" alt="Mount Network Drive" caption="NAS LDAP Authentication" %}
+
+Enter your full Carleton email and password. You may remember this in the keychain if you don't want to re-enter this information. You should be able to see this folder.
+
+{% include image.html file="nas-folder.png" alt="Mount Network Drive" caption="Kracum Folder" %}
+
+If you want to have this folder open automatically when the computer boots up, go to `System Settings`, `General`, and `Login Items & Extensions`. Then click the `+` icon and select the Kracum folder from the sidebar. If you've remembered your credentials in the keychain, the folder will launch at system start up.
