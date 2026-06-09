@@ -36,18 +36,38 @@ Inputs 1-8 are inputs for Kracum.
 
 | Input 9 | Input 10 | Input 11 | Input 12 | Input 13 | Input 14 | Input 15 | Input 16 | 
 | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- |
-| ARH L | ARH R| DM3 L | DM3 R | ARH Pdm |  | ARH HDMI | ARH HDMI |
+| ARH L | ARH R| DM3 L | DM3 R | ARH Pdm | ARH Aux | ARH HDMI | ARH HDMI |
 
 Inputs 9-16 are inputs for Applebaum, though they can be used for other purposes. 
 
 - Inputs 1-2 are the room mics in Applebaum.
 - Inputs 3-4 are the stereo mix coming from the [DM 3](https://usa.yamaha.com/products/proaudio/mixers/dm3/index.html) from the FoH in Applebaum.
-- Inputs 5 is the Applebaum podium mic.
+- Input 5 is the Applebaum podium mic.
+- Input 6 is the 3.5 mm Aux connection from the Applebaum podium.
 - Inputs 7-8 are the HDMI audio going to the Applebaum projector.
 
 ### Outputs
 
-All inputs send to the **STEREO** bus, which goes to our ATEM switcher. The **MONITOR** outputs to a pair of stereo speakers in the broadcast booth; it outputs identical but separate audio as the STEREO bus. If you have more questions about the broadcast audio topology, contact [Matthew Zimmerman](mailto:mzimmerman@carleton.edu).
+- All inputs send to the **STEREO** bus, which goes to our ATEM switcher and feeds our recorder. 
+- The **MONITOR** outputs to a pair of stereo speakers (Mackie MR5 MK 2) in the broadcast booth; it receives the stereo feeds from the **STEREO** buss.
+- In addition, **MATRIX 1** and **MATRIX 2** are the stereo feed going into our streamer. This feed is heavily compressed; we will talk about this in a [later section](mydoc_broadcast_audio.html#dynamics).
+
+
+
+<div style="display: flex; gap: 20px;">
+
+  <div style="flex: 1;">
+    {% include image.html file="ql1-live.jpeg" alt="QL 1" caption="QL MTRX 1 & 2" %}
+  </div>
+
+  <div style="flex: 1;">
+    {% include image.html file="ql1-live-comp.jpeg" alt="QL 1" caption="MTRX Inserts" %}
+  </div>
+
+</div>
+
+
+If you have more questions about the broadcast audio topology, contact [Matthew Zimmerman](mailto:mzimmerman@carleton.edu).
 
 ## Adjusting the Analog Gain
 
@@ -80,7 +100,9 @@ You want to set the levels before you start any recording. This is done during r
 
 7. Turn on the **ON** key of the **MONITOR** channel, and raise the MONITOR fader to an appropriate volume.
 
-### No sound?
+Check [here](mydoc_troubleshooting.html#sound-isnt-working) if sound isn't working.
+
+<!-- ### No sound?
 
 At this point, you should hear sound from the booth speakers. If you don’t hear sound, check whether the L/R meters are moving in the METER field of the **QL**.
 
@@ -96,4 +118,26 @@ It may be that the Aux cable behind the ATEM got detached, or that the connectio
 
 - If the L/R meters are not moving:
 
-Make sure that signals are being routed correctly to the patched input channels.
+Make sure that signals are being routed correctly to the patched input channels. -->
+
+
+## Monitor and Cue functions
+
+The Monitor function lets you monitor various outputs through your nearfield monitors. By default, this the monitor source is the STEREO channel. You can adjust this to your needs. Above the meters, click **MONITOR**.
+
+{% include image.html file="ql1-monitor-screen.jpeg" alt="QL 1" caption="QL Monitors" %}
+
+
+
+The Cue function enables you to check an individual channel or DCA group by temporarily monitoring it via MONITOR OUT. You can press the **CUE** key for any channel/group to turn cue on. This console has CUE set to `post fader`, so you'll hear all the processing/panning that goes into the STEREO feed. You can change this in the **CUE** window. Note that `PFL` means pre-fader and `AFL` means post-fader. When something is being cued the meter field will indicate the output level of the cue out.
+
+{% include image.html file="ql1-cue-screen.jpeg" alt="QL 1" caption="QL Cues" %}
+
+
+
+## Dynamics
+
+There are different ways to adjust the dynamics parameters. 
+
+### On channel
+
