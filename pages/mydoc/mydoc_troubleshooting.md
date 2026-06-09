@@ -64,7 +64,7 @@ td, th {
   Your browser does not support the video tag.
 </video>
 
-This is an instance where there might be multiple QLab workspaces open, and the program is having trouble discerning which workspace to prioritize. Close any additional workspace and trigger the cue again.
+This is an instance where there might be **multiple** QLab workspaces open, and the program is having trouble discerning which workspace to prioritize. Close any additional workspace and trigger the cue again.
 
 
 
@@ -94,3 +94,71 @@ Make sure that signals are being routed correctly to the patched input channels.
 ### I can't move the faders
 
 This is because the console is locked. If you see a black console screen with `CONSOLE LOCK` text on it, touch anywhere on the touchscreen to unlock. Then proceed with production.
+
+
+### I can't control the headamps/phantom power
+
+I will show this for QL/CL and DM series, since the interfaces are different. If you still can't see headamp on the console, make sure the channels are ***patched in DANTE Controller***.
+
+
+#### Mounting DANTE I/O on QL/CL
+
+We use an I/O device to remotely control head amp that is connected to the QL/CL console.
+
+1. Go to `SETUP`, `DANTE SETUP`, and press the `DEVICE MOUNT` tab in the lower part of the window.
+2. Press any of the I/O device select button (the box after #x). A connected I/O device should indicate green. If you see a yellow bar with `virtual` text, you need to remount this device.
+3. In the DEVICE SELECT window, press the `ONLINE DEVICE LIST`.
+4. Use the [TOUCH AND TURN] knob to select devices within the network, e.g., RIO1608, Shure receivers, etc..
+5. When you have finished making settings, press the OK button to close the window.
+6. Reboot the I/O devices (first) and the Console (last), in that order.
+
+<div style="display: flex; gap: 20px;">
+
+  <div style="flex: 1;">
+    {% include image.html file="ql1-device.jpeg" alt="QL 1" caption="Device Mount" %}
+  </div>
+
+  <div style="flex: 1;">
+    {% include image.html file="ql1-online.jpeg" alt="QL 1" caption="Online Device" %}
+  </div>
+
+</div>
+
+
+#### Mounting DANTE I/O on DM3
+
+
+
+
+#### Note on R I/O Dip Switch settings
+
+Long story short, here's the dip switches settings for 
+
+- Kracum: **only 2 and 4 down**, the rest is up
+- Applebam: **only 2 and 7 down**, the rest is up.
+
+Here's what each dip switch does.
+
+- Switch 1 (Unit ID)
+This switch determines whether the hex setting of the UNIT ID Switch will range from 0 to F or from 10 to 1F.
+
+{% include image.html file="rio-dip-1.png" alt="RIO Dip Switches" caption="RIO Dip Switches" %}
+
+- Switch 2 and 3 (IP Select Mode)
+
+These switches specify (basically) the ranges/type of IP addresses used when communicating.
+
+{% include image.html file="rio-dip-23.png" alt="RIO Dip Switches" caption="RIO Dip Switches" %}
+
+To confuse their users, Yamaha uses 3 different IP schemes: DHCP, Auto IP, and Static IP. Older devices, such as the first generation of RIOs, don't have the ability to specify this themselves, so you'll have to set this manually. DHCP (the Yamaha setting) is when the IP addresses are handed out by an external DHCP (the technology) server (e.g., 10.210.x.x); this is what we're using, so you should put **2 down and 3 up**.
+
+Auto IP is a Yamaha setting. It can be DHCPed (the technology). This is when IP's are in the 192.168.x.x range, which is typical for a home router. Follow this if you're using this range.
+
+To further confuse you, you can set it to STATIC IP Auto, so the IP of each device will be 192.168.0.x, where x is the unit ID.
+
+Lastly, you can always set IP's statically. 
+
+- Switch 4 (Secondary Port)
+
+{% include image.html file="rio-dip-4.png" alt="RIO Dip Switches" caption="RIO Dip Switches" %}
+
