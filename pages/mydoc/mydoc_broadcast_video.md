@@ -79,38 +79,88 @@ The Nano can also record to its internal SD/SSD. To start/stop recording:
 
 #### Configuring the Nano
 
-The Nano has an HTML interface where you can configure its settings. Open a browser, and go to [http://kracum-stream.south.carleton.edu/](http://kracum-stream.south.carleton.edu/).
+The Nano has an HTML interface where you can configure its settings. Open a browser, and go to [http://kracum-stream.south.carleton.edu/](http://kracum-stream.south.carleton.edu/). You can configure various settings here once you log in. I note a few features here.
 
+- You can preview the livestream/recording at [URL below](http://10.130.19.222/preview.cgi?channel=1). You'll need to log in.
 
+{% include image.html file="nano-status.png" alt="Pearl Nano" caption="Pearl Nano Status" %}
+
+- Layout is where you choose where the inputs are coming from. The video is coming from the SDI loop out of the Hyperdeck (`Output 2` of ATEM, always set to `Program`). The audio takes the dedicated livestream feed from the QL1 (**MTRX 1 and 2**); this comes out of the XLR omni ports from the QL to the Nano. If you don't want to use livestream audio (and want clean audio instead), this is where you'll need to select **SDI audio** and deselect **XLR/RCA audio**.
+
+{% include image.html file="nano-layout.png" alt="Pearl Nano" caption="Pearl Nano Layout" %}
+
+- You can change the [encoder settings](http://kracum-stream.south.carleton.edu/admin/channel1/codecsetup), enter the [RTMP server information](http://kracum-stream.south.carleton.edu/admin/channel1/streamsetup), and the [automatic file upload location](http://kracum-stream.south.carleton.edu/admin/afucfg) in the following locations.
+
+<!-- <div style="display: flex; gap: 10px; justify-content: center; align-items: start;">
+
+  <div style="flex: 1; width: 33%;">
+    {% include image.html file="nano-encoding.png" alt="Pearl Nano" caption="Pearl Nano Encoder Seetings" %}
+  </div>
+
+  <div style="flex: 1; width: 33%;">
+    {% include image.html file="nano-streaming.png" alt="Pearl Nano" caption="Pearl Nano Stream Settings" %}
+  </div>
+
+  <div style="flex: 1; width: 33%;">
+    {% include image.html file="nano-nas.png" alt="Pearl Nano" caption="Pearl Nano NAS connection" %}
+  </div>
+
+</div> -->
+
+<div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">
+
+  <div style="flex: 1; text-align: center;">
+    <img src="{{ '/images/nano-encoding.png' | relative_url }}" alt="Pearl Nano Encoder Settings" style="max-width: 100%; height: auto; display: block;">
+    <p style="font-size: 0.9em; margin-top: 8px;">Pearl Nano Encoder Settings</p>
+  </div>
+
+  <div style="flex: 1; text-align: center;">
+    <img src="{{ '/images/nano-streaming.png' | relative_url }}" alt="Pearl Nano Stream Settings" style="max-width: 100%; height: auto; display: block;">
+    <p style="font-size: 0.9em; margin-top: 8px;">Pearl Nano Stream Settings</p>
+  </div>
+
+  <div style="flex: 1; text-align: center;">
+    <img src="{{ '/images/nano-nas.png' | relative_url }}" alt="Pearl Nano NAS connection" style="max-width: 100%; height: auto; display: block;">
+    <p style="font-size: 0.9em; margin-top: 8px;">Pearl Nano NAS connection</p>
+  </div>
+
+</div>
 
 ## Preshow checklist
 
 By this point, you should be able to start a show. Typically, this is what a tech shift will look like. (Your exact responsibilities will depend on the shift you're assigned to.)
 
-- Arrival: You're typically scheduled to arrive **1-2 hours before** the event. Performers typically arrive 15-30 minutes after you arrive.
-    - Video: You should use the time before artists arrive to start building the QLab graphics. At the very least, you sould be able to complete the **Title** page. 
-    - After completing the title page, you should run the cue with `space`. This brings it onto `Input 7` of the ATEM. 
-    - **Set Output 1 (Crestron DA) to QLab**. (You can also achieve this via `Macro 2` in ATEM.)
+### Arrival
 
-- Rehearsals: Rehearsals start **1-1.5 hours before** the event. Performers may run pieces according to the program, but they may not.
-    - Video: LBOs should bring the stage to their actual lighting cues during the show. You can use this opportunity to adjust the camera exposure and save any presets if needed.
-    - Use this rehearsal time to finish any lower-thirds and credits.
-    - Adjust the audio levels during run-throughs.
+You're typically scheduled to arrive **1-2 hours before** the event. Performers typically arrive 15-30 minutes after you arrive.
 
-- Preshow:
-    - **30 minutes before** the event, you should finish all prep work, including any graphics, presets, and audio levels.
-    - When done, bring the QLab input (`Input 7`) to `Program`, and set **Output 1 (Crestron DA) to `Program`**. (You can also achieve this via `Macro 1` in ATEM.)
-    - We typically start and end transitions with a wide shot; you can use `House Center` for this. Once you've done that, wait until the house opens, and bring `Input 2` to `Preview`.
-    - **15 minutes before** the event, format an SD card and start the stream, if applicable. You can greet the audience in the livestream chat, if you want. You should use one of the Carleton computers, so you're logged in as `Carleton College`.
-    - **5 minutes before** the event, start the recording.
+1. Video: You should use the time before artists arrive to start building the QLab graphics. At the very least, you sould be able to complete the **Title** page. 
+2. After completing the title page, you should run the cue with `space`. This brings it onto `Input 7` of the ATEM. 
+3. **Set Output 1 (Crestron DA) to QLab**. (You can also achieve this via `Macro 2` in ATEM.)
 
-- During the show:
-    - Have fun?
+### Rehearsals:
 
-- Postshow:
-    - The postshow sequence in QLab will automatically stop the Hyperdeck recording. The Pearl Nano recording needs to be stopped manually.
-    - When the indicator light on the Hyperdeck stops being red, this means the deck has finished writing to the disk. Only take out the SD card until **AFTER** the disk has finished writing.
-    - The Pearl Nano will automatically transfer its recording to our NAS.
-    - Manually transfer the Hyperdeck recording to the Mac Studio in the recording booth (M102A). Give the file a legible name consistent with our naming convention, and store it under the `Pre-Edited Media` folder in the `KPH Team Drive`.
-    - Shut down and leave.
+Rehearsals start **1-1.5 hours before** the event. Performers may run pieces according to the program, but they may not.
+
+1. Video: LBOs should bring the stage to their actual lighting cues during the show. You can use this opportunity to adjust the camera exposure and save any presets if needed.
+2. Use this rehearsal time to finish any lower-thirds and credits.
+3. Adjust the audio levels during run-throughs.
+
+### Preshow:
+
+1. **30 minutes before** the event, you should finish all prep work, including any graphics, presets, and audio levels.
+2. When done, bring the QLab input (`Input 7`) to `Program`, and set **Output 1 (Crestron DA) to `Program`**. (You can also achieve this via `Macro 1` in ATEM.)
+3. We typically start and end transitions with a wide shot; you can use `House Center` for this. Once you've done that, wait until the house opens, and bring `Input 2` to `Preview`.
+4. **15 minutes before** the event, format an SD card and start the stream, if applicable. You can greet the audience in the [livestream chat](https://go.carleton.edu/carletonlive), if you want. You should use one of the Carleton computers, so you're logged in as `Carleton College`.
+5. **5 minutes before** the event, start the recording.
+
+### During the show
+- Have fun?
+
+### Postshow:
+1. The postshow sequence in QLab will automatically stop the Hyperdeck recording. The Pearl Nano recording needs to be stopped manually.
+2. When the indicator light on the Hyperdeck stops being red, this means the deck has finished writing to the disk. Only take out the SD card until **AFTER** the disk has finished writing.
+3. The Pearl Nano will automatically transfer its recording to our NAS.
+4. Manually transfer the Hyperdeck recording to the Mac Studio in the recording booth (M102A). Give the file a legible name consistent with our naming convention, and store it under the `Pre-Edited Media` folder in the `KPH Team Drive`.
+5. Shut down and leave.
 

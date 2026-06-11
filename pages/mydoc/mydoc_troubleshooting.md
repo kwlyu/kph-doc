@@ -61,6 +61,9 @@ If after configuring the ATEM, the lower thirds are still not displaying on the 
 
 {% include image.html file="qlab-network.png" alt="QLab Network Settings" caption="QLab Network Settings" %}
 
+Lastly, on the same computer, open AV Bridge (formerly atemOSC) from the dock. This program receives OSC messages from QLab and convert and transmit to ATEM. Make sure the destinations have the correct IP's.
+
+{% include image.html file="atemOSC.png" alt="ATEM OSC" caption="ATEM OSC" %}
 
 ###  QLab credits aren't playing
 

@@ -53,7 +53,7 @@ entries:
       output: web, pdf
 
   - title: Fundamentals
-    output: web
+    output: web, pdf
     folderitems:
 
     - title: QLab
