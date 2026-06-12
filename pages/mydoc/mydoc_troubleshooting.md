@@ -9,7 +9,7 @@ permalink: mydoc_troubleshooting.html
 folder: mydoc
 ---
 
-## QLab isn't working
+## Video isn't working
 
 ### I can't see QLab / QLab is displaying this weird calendar thing
 

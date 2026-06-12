@@ -73,6 +73,14 @@ entries:
 
     folderitems:
 
-    - title: Troubleshooting
-      url: /mydoc_troubleshooting.html
+    - title: Video isn't working
+      url: /mydoc_troubleshooting_video.html
+      output: web, pdf
+
+    - title: Sound isn't working
+      url: /mydoc_troubleshooting_audio.html
+      output: web, pdf
+
+    - title: Network isn't working
+      url: /mydoc_troubleshooting_network.html
       output: web, pdf

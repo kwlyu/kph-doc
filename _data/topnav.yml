@@ -22,15 +22,15 @@ topnav_dropdowns:
           external_url: https://www.blackmagicdesign.com/
         - title: Networking
           external_url: https://stolafcarleton.teamdynamix.com/TDClient/2092/Carleton/Requests/ServiceCatalog
-    - title: Inventory
-      folderitems:
-        - title: Lighting
-          url: /mydoc_introduction.html
-        - title: Audio
-          url: /mydoc_introduction.html
-        - title: Video
-          url: /mydoc_introduction.html
-        - title: Networking
-          url: /mydoc_introduction.html
+    # - title: Inventory
+    #   folderitems:
+    #     - title: Lighting
+    #       url: /mydoc_introduction.html
+    #     - title: Audio
+    #       url: /mydoc_introduction.html
+    #     - title: Video
+    #       url: /mydoc_introduction.html
+    #     - title: Networking
+    #       url: /mydoc_introduction.html
 
 # Copyright 2021 Google LLC
