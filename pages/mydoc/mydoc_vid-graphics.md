@@ -26,7 +26,7 @@ If you haven't already, make sure you launch **QLab 5** {% include inline_image.
 
 Understand that option 2 and 3 might present you with obsolete show files." %}
 
-Check [here](/mydoc_troubleshooting.html) for common troubleshooting techniques if you have trouble getting started.
+Check [here](/mydoc_troubleshooting_video.html) for common troubleshooting techniques if you have trouble getting started.
 
 ## Save the template as a new file
 
