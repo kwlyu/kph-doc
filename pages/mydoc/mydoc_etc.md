@@ -2,7 +2,7 @@
 title: Fun Tricks for EOS
 tags: [formatting]
 keywords: notes, tips, cautions, warnings, admonitions
-last_updated: July 3, 2016
+# last_updated: July 3, 2016
 summary: "Some fun tricks for EOS."
 sidebar: mydoc_sidebar
 permalink: mydoc_etc.html

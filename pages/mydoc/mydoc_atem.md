@@ -2,7 +2,7 @@
 title: ATEM
 tags: [formatting]
 keywords: notes, tips, cautions, warnings, admonitions
-last_updated: July 3, 2016
+# last_updated: July 3, 2016
 summary: "You can control ATEM switchers through software or dedicated control panels."
 sidebar: mydoc_sidebar
 permalink: mydoc_atem.html

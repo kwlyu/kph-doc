@@ -2,7 +2,7 @@
 title: QLab
 tags: [formatting]
 keywords: notes, tips, cautions, warnings, admonitions
-last_updated: May 6, 2026
+# last_updated: May 6, 2026
 summary: "something to do later"
 sidebar: mydoc_sidebar
 permalink: mydoc_qlab.html

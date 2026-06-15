@@ -2,7 +2,7 @@
 title: Broadcast Video
 tags: [formatting]
 keywords: notes, tips, cautions, warnings, admonitions
-last_updated: July 3, 2016
+# last_updated: July 3, 2016
 summary: "Complete graphics. Set camera/audio levels. Bring Title graphics to program. Start recording/streaming."
 sidebar: mydoc_sidebar
 simple_map: true

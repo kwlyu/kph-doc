@@ -2,7 +2,7 @@
 title: Broadcast Audio
 tags: [formatting]
 keywords: notes, tips, cautions, warnings, admonitions
-last_updated: July 3, 2016
+# last_updated: July 3, 2016
 summary: "Bring faders to unity and adjust the analog gain. Keep levels between -20dB to -10dB."
 sidebar: mydoc_sidebar
 simple_map: true

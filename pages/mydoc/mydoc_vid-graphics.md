@@ -1,7 +1,7 @@
 ---
 title: QLab Video Graphics
 keywords: documentation theme, jekyll, technical writers, help authoring tools, hat replacements
-last_updated: May 8, 2026
+# last_updated: May 8, 2026
 tags: [getting_started]
 summary: "Follow these instructions to get started on the graphics side of production. We use QLab for lower-thirds and credits, as well as video and audio playback."
 sidebar: mydoc_sidebar

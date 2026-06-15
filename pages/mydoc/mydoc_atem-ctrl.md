@@ -2,7 +2,7 @@
 title: ATEM Software Control
 tags: [formatting]
 keywords: notes, tips, cautions, warnings, admonitions
-last_updated: July 3, 2016
+# last_updated: July 3, 2016
 summary: "Select [1] - [8] to bring inputs to preview. Hit [space] for cuts, and use [return] for dissolves."
 sidebar: mydoc_sidebar
 simple_map: true
