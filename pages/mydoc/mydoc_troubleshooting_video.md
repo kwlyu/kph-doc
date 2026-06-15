@@ -20,6 +20,10 @@ To get out of Firefox, simply press `command+q` (shortcut to quit apps on MacOS 
   Your browser does not support the video tag.
 </video>
 
+## The lower thirds are "out of order"
+
+If you're seeing the lower thirds key (black) still overlaying on the program after the cue, or the QLab cues are first fading out the keying and then fading in the keying (as opposed to fading in the key and then taking out the key), chances are the 
+
 
 ##  QLab lower thirds are displaying only to the QLab output / not overlaying on the program
 
