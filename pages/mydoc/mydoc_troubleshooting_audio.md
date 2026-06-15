@@ -134,3 +134,79 @@ You can leave this the way it is. Whenever you recall a scene on a console, you'
 
 ## I'm doing a separate broadcast mix from the FoH mix, and I can only hear audio coming out of one console
 
+This happens when multiple consoles are sharing the same Dante channel, but the transmitting channel doesn't have `multicast` enabled. Before we begin, it's always good practice to check the Rx and Tx channels are patched correctly.
+
+By default, Dante uses `unitcast` to transmit audio. You'll need to enable `multicast` manually if you want the same channel of audio to go to different devices downstream. To do this, first log into Dante Domain Manager.
+
+
+<div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">
+
+  <div style="flex: 1; text-align: center;">
+    <img src="{{ '/images/dante-unmanaged.png' | relative_url }}" alt="Dante" style="max-width: 100%; height: auto; display: block;">
+    <p style="font-size: 0.9em; margin-top: 8px;">Dante Controller</p>
+  </div>
+
+  <div style="flex: 1; text-align: center;">
+    <img src="{{ '/images/dante-ddm-login.png' | relative_url }}" alt="Dante" style="max-width: 100%; height: auto; display: block;">
+    <p style="font-size: 0.9em; margin-top: 8px;">DDM Login</p>
+  </div>
+
+</div>
+
+1. Open up **Dante Controller**. Because we have **Dante Domain Manager** (DDM) installed, click the DDM icon on the toolbar to login.
+2. You'll see the login interface. Enter our DDM server [dante.carleton.edu](dante.carleton.edu), and select **Next**. You'll then be asked to enter your credentials. Enter your Carleton username and password.
+3. Once logged in, go to the domain selector and select `WCC-MUSC-Perform`.
+
+<div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">
+
+  <div style="flex: 1; text-align: center;">
+    <img src="{{ '/images/dante-managed.png' | relative_url }}" alt="Dante" style="max-width: 100%; height: auto; display: block;">
+    <p style="font-size: 0.9em; margin-top: 8px;">Dante Controller</p>
+  </div>
+
+  <div style="flex: 1; text-align: center;">
+    <img src="{{ '/images/dante-ddm-domain.png' | relative_url }}" alt="Dante" style="max-width: 100%; height: auto; display: block;">
+    <p style="font-size: 0.9em; margin-top: 8px;">DDM Domains</p>
+  </div>
+
+</div>
+
+You should see the following devices:
+
+{% include image.html file="dante-perform.png" alt="Dante" caption="Dante Performance Domain" %}
+
+Now that you're logged in, choose the Transmitting device you wish to configure multicast on. In my example, I'll be using Kracum' Symetrix Prism DSP:
+
+1. Double-click the transmitter to bring up the device view. Navigate to the transmit tab. Click the multicast icon, highlighted in red below.
+2. This brings up the page to create multicast flows, if there isn't one already configured. Click `Dante`, choose `8` for max channels per flow, and select the channels. You may pick specific channels, but you can also simply `Select All`. Click `Create` to finish.
+
+<div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">
+
+  <div style="flex: 1; text-align: center;">
+    <img src="{{ '/images/dante-device-tx.png' | relative_url }}" alt="Dante" style="max-width: 100%; height: auto; display: block;">
+    <p style="font-size: 0.9em; margin-top: 8px;">Dante Device View</p>
+  </div>
+
+  <div style="flex: 1; text-align: center;">
+    <img src="{{ '/images/dante-multicast.png' | relative_url }}" alt="Dante" style="max-width: 100%; height: auto; display: block;">
+    <p style="font-size: 0.9em; margin-top: 8px;">Dante Multicast</p>
+  </div>
+
+</div>
+
+
+Note that if there is already a multicast flow containing a certain channel, you won't be able to create another flow containing the same channel. If you wish to re-create flows, first select the flows to the right on device view, delete, and then follow the steps above to create a new flow. Audio will be briefly interrupted while you do this.
+
+<div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">
+
+  <div style="flex: 1; text-align: center;">
+    <img src="{{ '/images/dante-device-tx-2.png' | relative_url }}" alt="Dante" style="max-width: 100%; height: auto; display: block;">
+    <p style="font-size: 0.9em; margin-top: 8px;">Dante Device view</p>
+  </div>
+
+  <div style="flex: 1; text-align: center;">
+    <img src="{{ '/images/dante-multicast-2.png' | relative_url }}" alt="Dante" style="max-width: 100%; height: auto; display: block;">
+    <p style="font-size: 0.9em; margin-top: 8px;">Dante Multicast</p>
+  </div>
+
+</div>
