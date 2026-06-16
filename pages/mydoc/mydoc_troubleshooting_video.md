@@ -20,10 +20,20 @@ To get out of Firefox, simply press `command+q` (shortcut to quit apps on MacOS 
   Your browser does not support the video tag.
 </video>
 
-## The lower thirds are "out of order"
+## The lower thirds are "out of order" 
 
-If you're seeing the lower thirds key (black) still overlaying on the program after the cue, or the QLab cues are first fading out the keying and then fading in the keying (as opposed to fading in the key and then taking out the key), chances are the 
+If you're seeing the lower thirds key (black) still overlaying on the program after the cue, or the QLab cues are first fading out the keying and then fading in the keying (as opposed to fading in the key and then taking out the key), chances are the `DSK` was left on / accidentally triggered before you run the QLab cues. If you **accidentally `panic` (`escape`) QLab cues too early**, you might end up in this situation. 
 
+<video autoplay loop muted playsinline width="100%">
+  <source src="{{ '/videos/atem-dsk-out-of-order.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+To get out of this situation, make sure `DSK 1` is NOT on air (not lit up red) when you run the QLab script. You can take `DSK 1` off the air by pressing `DSK 1 CUT` or `DSK 1 AUTO` (which fades out the DSK in 1 second).
+
+{% include image.html file="atem-dsk-ctrl.png" alt="ATEM DSK" caption="ATEM DSK" %}
+
+You can now run the lower thirds cues normally. Remember to always wait for the cues to fully finish to avoid this situation.
 
 ##  QLab lower thirds are displaying only to the QLab output / not overlaying on the program
 

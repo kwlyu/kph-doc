@@ -24,3 +24,37 @@ Enter your full Carleton email and password. You may remember this in the keycha
 {% include image.html file="nas-folder.png" alt="Mount Network Drive" caption="Kracum Folder" %}
 
 If you want to have this folder open automatically when the computer boots up, go to `System Settings`, `General`, and `Login Items & Extensions`. Then click the `+` icon and select the Kracum folder from the sidebar. If you've remembered your credentials in the keychain, the folder will launch at system start up.
+
+
+## How do I transfer files from the hyperdeck to the NAS?
+
+Our BMD Hyperdeck supports FTP, which means we can download and upload its recordings without having to remove the media. To do this, launch **Cyberduck** {% include inline_image.html file="cyberduck_size.png" alt="Cyberduck button" %} in the dock.
+
+{% include image.html file="cyberduck-bookmark.png" alt="Cyberduck" caption="Cyberduck Bookmark" %}
+
+1. If you don't see a bookmark called **KPH Hyperdeck** already, click the `+` icon on the bottom left to create a connection. If you do, skip the follow step.
+2. Enter the **nickname**, **server address** ([10.130.18.106](10.130.18.106)), and enable **anonymous login** like below. You can now connect to the hyperdeck.
+
+{% include image.html file="cyberduck-new-bookmark.png" alt="Cyberduck" caption="Create Cyberduck Bookmark" %}
+
+Now you should see a bookmark like that in step 1. You can double-click the bookmark to view the files inside the Hyperdeck. 
+
+{% include image.html file="cyberduck-filetree.png" alt="Cyberduck" caption="Cyberduck File Tree" %}
+
+You can now open our NAS and drag desired files from the Hyperdeck into a NAS folder. I recommend putting it inside a designated folder to keep things organized. An example would be `/Volumes/kracum/Recording Media/Video/1_Pre-Edit_Media/BMD`.
+
+<div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">
+
+  <div style="flex: 1; text-align: center;">
+    <img src="{{ '/images/nas-bmd-folder.png' | relative_url }}" alt="BMD NAS Folder" style="max-width: 100%; height: auto; display: block;">
+    <p style="font-size: 0.9em; margin-top: 8px;">BMD NAS Folder</p>
+  </div>
+
+  <div style="flex: 1; text-align: center;">
+    <img src="{{ '/images/cyberduck-transfer.png' | relative_url }}" alt="Cyberduck File Transfer" style="max-width: 100%; height: auto; display: block;">
+    <p style="font-size: 0.9em; margin-top: 8px;">Cyberduck File Transfer</p>
+  </div>
+
+</div>
+
+While you're transferring, Cyberduck will show you the real-time statistics and give you a confirmation when done.
