@@ -18,10 +18,32 @@ We use [ATEM Software Control](https://www.blackmagicdesign.com/products/atemmin
 
 When you sit down at the broadcast booth, you will likely see the multiview on the monitor, and the ATEM software on the ATEM laptop.
 
-<div style="display: flex; gap: 15px; align-items: flex-start;">
-  {% include image.html file="multiview.png" alt="Multiview" caption="ATEM Multiview" max-width="400" %}
-  {% include image.html file="atem-software.png" alt="ATEM Software" caption="ATEM Software" max-width="400" %}
+<!-- <div style="display: flex; gap: 20px;">
+
+  <div style="flex: 1;">
+    {% include image.html file="multiview.png" alt="Multiview" caption="ATEM Multiview" max-width="400" %}
+  </div>
+
+  <div style="flex: 1;">
+    {% include image.html file="atem-software.png" alt="ATEM Software" caption="ATEM Software" max-width="400" %}
+  </div>
+
+</div> -->
+
+<div style="display: table; width: 100%; table-layout: fixed; border-spacing: 15px 0; margin-bottom: 20px;">
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 33%;">
+    <img src="{{ '/images/multiview.png' | relative_url }}" alt="ATEM Multiview" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">ATEM Multiview</p>
+  </div>
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 33%;">
+    <img src="{{ '/images/atem-software.png' | relative_url }}" alt="ATEM Software" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">ATEM Software</p>
+  </div>
+
 </div>
+
 
 ### Inputs 
 

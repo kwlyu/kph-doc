@@ -43,16 +43,16 @@ Now you should see a bookmark like that in step 1. You can double-click the book
 
 You can now open our NAS and drag desired files from the Hyperdeck into a NAS folder. I recommend putting it inside a designated folder to keep things organized. An example would be `/Volumes/kracum/Recording Media/Video/1_Pre-Edit_Media/BMD`.
 
-<div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">
+<div style="display: table; width: 100%; table-layout: fixed; border-spacing: 15px 0; margin-bottom: 20px;">
 
-  <div style="flex: 1; text-align: center;">
-    <img src="{{ '/images/nas-bmd-folder.png' | relative_url }}" alt="BMD NAS Folder" style="max-width: 100%; height: auto; display: block;">
-    <p style="font-size: 0.9em; margin-top: 8px;">BMD NAS Folder</p>
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 50%;">
+    <img src="{{ '/images/nas-bmd-folder.png' | relative_url }}" alt="BMD NAS Folder" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">BMD NAS Folder</p>
   </div>
 
-  <div style="flex: 1; text-align: center;">
-    <img src="{{ '/images/cyberduck-transfer.png' | relative_url }}" alt="Cyberduck File Transfer" style="max-width: 100%; height: auto; display: block;">
-    <p style="font-size: 0.9em; margin-top: 8px;">Cyberduck File Transfer</p>
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 50%;">
+    <img src="{{ '/images/cyberduck-transfer.png' | relative_url }}" alt="Cyberduck File Transfer" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">Cyberduck File Transfer</p>
   </div>
 
 </div>

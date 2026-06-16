@@ -53,7 +53,7 @@ Inputs 9-16 are inputs for Applebaum, though they can be used for other purposes
 - In addition, **MATRIX 1** and **MATRIX 2** are the stereo feed going into our streamer. This feed is heavily compressed; we will talk about this in a [later section](mydoc_broadcast_audio.html#dynamics).
 
 
-
+<!-- 
 <div style="display: flex; gap: 20px;">
 
   <div style="flex: 1;">
@@ -62,6 +62,20 @@ Inputs 9-16 are inputs for Applebaum, though they can be used for other purposes
 
   <div style="flex: 1;">
     {% include image.html file="ql1-live-comp.jpeg" alt="QL 1" caption="MTRX Inserts" %}
+  </div>
+
+</div> -->
+
+<div style="display: table; width: 100%; table-layout: fixed; border-spacing: 15px 0; margin-bottom: 20px;">
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 50%;">
+    <img src="{{ '/images/ql1-live.jpeg' | relative_url }}" alt="QL MTRX 1 & 2" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">QL MTRX 1 & 2</p>
+  </div>
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 50%;">
+    <img src="{{ '/images/ql1-live-comp.jpeg' | relative_url }}" alt="MTRX Inserts" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">MTRX Inserts</p>
   </div>
 
 </div>

@@ -107,7 +107,7 @@ The Nano has an HTML interface where you can configure its settings. Open a brow
 
 </div> -->
 
-<div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">
+<!-- <div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">
 
   <div style="flex: 1; text-align: center;">
     <img src="{{ '/images/nano-encoding.png' | relative_url }}" alt="Pearl Nano Encoder Settings" style="max-width: 100%; height: auto; display: block;">
@@ -124,7 +124,45 @@ The Nano has an HTML interface where you can configure its settings. Open a brow
     <p style="font-size: 0.9em; margin-top: 8px;">Pearl Nano NAS connection</p>
   </div>
 
+</div> -->
+
+
+<div style="display: table; width: 100%; table-layout: fixed; border-spacing: 15px 0; margin-bottom: 20px;">
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 33%;">
+    <img src="{{ '/images/nano-encoding.png' | relative_url }}" alt="Pearl Nano Encoder Settings" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">Pearl Nano Encoder Settings</p>
+  </div>
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 33%;">
+    <img src="{{ '/images/nano-streaming.png' | relative_url }}" alt="Pearl Nano Stream Settings" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">Pearl Nano Stream Settings</p>
+  </div>
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 33%;">
+    <img src="{{ '/images/nano-nas.png' | relative_url }}" alt="Pearl Nano NAS connection" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">Pearl Nano NAS connection</p>
+  </div>
+
 </div>
+
+
+<!-- <div style="display: flex; gap: 10px;">
+
+  <div style="flex: 1;">
+    {% include image.html file="nano-encoding.png" alt="Pearl Nano" caption="Pearl Nano Encoder Seetings" %}
+  </div>
+
+  <div style="flex: 1;">
+    {% include image.html file="nano-streaming.png" alt="Pearl Nano" caption="Pearl Nano Stream Settings" %}
+  </div>
+
+  <div style="flex: 1;">
+    {% include image.html file="nano-nas.png" alt="Pearl Nano" caption="Pearl Nano NAS connection" %}
+  </div>
+
+</div> -->
+
 
 ## Preshow checklist
 
@@ -149,13 +187,14 @@ Rehearsals start **1-1.5 hours before** the event. Performers may run pieces acc
 ### Preshow:
 
 1. **30 minutes before** the event, you should finish all prep work, including any graphics, presets, and audio levels.
-2. When done, bring the QLab input (`Input 7`) to `Program`, and set **Output 1 (Crestron DA) to `Program`**. (You can also achieve this via `Macro 1` in ATEM.)
-3. We typically start and end transitions with a wide shot; you can use `House Center` for this. Once you've done that, wait until the house opens, and bring `Input 2` to `Preview`.
-4. **15 minutes before** the event, format an SD card and start the stream, if applicable. You can greet the audience in the [livestream chat](https://go.carleton.edu/carletonlive), if you want. You should use one of the Carleton computers, so you're logged in as `Carleton College`.
-5. **5 minutes before** the event, start the recording.
+2. When done, press `space` to bring up the `Title` cue in QLab, and bring the QLab input (`Input 7`) to `Program`, and set **Output 1 (Crestron DA) to `Program`**. (You can also achieve this via `Macro 1` in ATEM.)
+3. We typically start and end transitions with a wide shot; you can use `House Center` for this. Once you've done that, wait until the house opens, and bring `Input 2` to `Program`.
+4. Once you've brought `Input 2` to `Program`, you can `espace` to **panic** the QLab title cue. This is to prevent the `Title` cue to overlap with any following Lower Thirds cues.
+5. **15 minutes before** the event, format an SD card and start the stream, if applicable. You can greet the audience in the [livestream chat](https://go.carleton.edu/carletonlive), if you want. You should use one of the Carleton computers, so you're logged in as `Carleton College`.
+6. **5 minutes before** the event, start the recording.
 
 ### During the show
-- Have fun?
+- Press space to advance the lower thirds cues. Select / use `up` or `down` arrows to choose different cues in case order changes.
 
 ### Postshow:
 1. The postshow sequence in QLab will automatically stop the Hyperdeck recording. The Pearl Nano recording needs to be stopped manually.

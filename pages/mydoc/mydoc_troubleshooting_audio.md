@@ -63,7 +63,7 @@ We use an I/O device to remotely control head amp that is connected to the QL/CL
 </div> -->
 
 
-<div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">
+<!-- <div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">
 
   <div style="flex: 1; text-align: center;">
     <img src="{{ '/images/ql1-device.jpeg' | relative_url }}" alt="Device Mount" style="max-width: 100%; height: auto; display: block;">
@@ -75,10 +75,26 @@ We use an I/O device to remotely control head amp that is connected to the QL/CL
     <p style="font-size: 0.9em; margin-top: 8px;">Online Device</p>
   </div>
 
+</div> -->
+
+<div style="display: table; width: 100%; table-layout: fixed; border-spacing: 15px 0; margin-bottom: 20px;">
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 50%;">
+    <img src="{{ '/images/ql1-device.jpeg' | relative_url }}" alt="Device Mount" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">Device Mount</p>
+  </div>
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 50%;">
+    <img src="{{ '/images/ql1-online.jpeg' | relative_url }}" alt="Online Device" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">Online Device</p>
+  </div>
+
 </div>
+
 
 ### Mounting DANTE I/O on DM3
 
+DM3 will automatically mount any **patched and supported** DANTE I/O. If you have a patched I/O that's not showing up, check below for their Dip Switches settings.
 
 
 
@@ -139,7 +155,7 @@ This happens when multiple consoles are sharing the same Dante channel, but the 
 By default, Dante uses `unitcast` to transmit audio. You'll need to enable `multicast` manually if you want the same channel of audio to go to different devices downstream. To do this, first log into Dante Domain Manager.
 
 
-<div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">
+<!-- <div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">
 
   <div style="flex: 1; text-align: center;">
     <img src="{{ '/images/dante-unmanaged.png' | relative_url }}" alt="Dante" style="max-width: 100%; height: auto; display: block;">
@@ -149,6 +165,20 @@ By default, Dante uses `unitcast` to transmit audio. You'll need to enable `mult
   <div style="flex: 1; text-align: center;">
     <img src="{{ '/images/dante-ddm-login.png' | relative_url }}" alt="Dante" style="max-width: 100%; height: auto; display: block;">
     <p style="font-size: 0.9em; margin-top: 8px;">DDM Login</p>
+  </div> -->
+
+
+
+<div style="display: table; width: 100%; table-layout: fixed; border-spacing: 15px 0; margin-bottom: 20px;">
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 50%;">
+    <img src="{{ '/images/dante-unmanaged.png' | relative_url }}" alt="Dante Controller" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">Dante Controller</p>
+  </div>
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 50%;">
+    <img src="{{ '/images/dante-ddm-login.png' | relative_url }}" alt="DDM Login" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">DDM Login</p>
   </div>
 
 </div>
@@ -157,7 +187,7 @@ By default, Dante uses `unitcast` to transmit audio. You'll need to enable `mult
 2. You'll see the login interface. Enter our DDM server [dante.carleton.edu](dante.carleton.edu), and select **Next**. You'll then be asked to enter your credentials. Enter your Carleton username and password.
 3. Once logged in, go to the domain selector and select `WCC-MUSC-Perform`.
 
-<div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">
+<!-- <div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">
 
   <div style="flex: 1; text-align: center;">
     <img src="{{ '/images/dante-managed.png' | relative_url }}" alt="Dante" style="max-width: 100%; height: auto; display: block;">
@@ -167,6 +197,21 @@ By default, Dante uses `unitcast` to transmit audio. You'll need to enable `mult
   <div style="flex: 1; text-align: center;">
     <img src="{{ '/images/dante-ddm-domain.png' | relative_url }}" alt="Dante" style="max-width: 100%; height: auto; display: block;">
     <p style="font-size: 0.9em; margin-top: 8px;">DDM Domains</p>
+  </div>
+
+</div> -->
+
+
+<div style="display: table; width: 100%; table-layout: fixed; border-spacing: 15px 0; margin-bottom: 20px;">
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 50%;">
+    <img src="{{ '/images/dante-managed.png' | relative_url }}" alt="Dante Controller" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">Dante Controller</p>
+  </div>
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 50%;">
+    <img src="{{ '/images/dante-ddm-domain.png' | relative_url }}" alt="DDM Domains" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">DDM Domains</p>
   </div>
 
 </div>
@@ -180,7 +225,7 @@ Now that you're logged in, choose the Transmitting device you wish to configure 
 1. Double-click the transmitter to bring up the device view. Navigate to the transmit tab. Click the multicast icon, highlighted in red below.
 2. This brings up the page to create multicast flows, if there isn't one already configured. Click `Dante`, choose `8` for max channels per flow, and select the channels. You may pick specific channels, but you can also simply `Select All`. Click `Create` to finish.
 
-<div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">
+<!-- <div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">
 
   <div style="flex: 1; text-align: center;">
     <img src="{{ '/images/dante-device-tx.png' | relative_url }}" alt="Dante" style="max-width: 100%; height: auto; display: block;">
@@ -192,12 +237,27 @@ Now that you're logged in, choose the Transmitting device you wish to configure 
     <p style="font-size: 0.9em; margin-top: 8px;">Dante Multicast</p>
   </div>
 
+</div> -->
+
+
+<div style="display: table; width: 100%; table-layout: fixed; border-spacing: 15px 0; margin-bottom: 20px;">
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 50%;">
+    <img src="{{ '/images/dante-device-tx.png' | relative_url }}" alt="Dante Device View" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">Dante Device View</p>
+  </div>
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 50%;">
+    <img src="{{ '/images/dante-multicast.png' | relative_url }}" alt="Dante Multicast" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">Dante Multicast</p>
+  </div>
+
 </div>
 
 
 Note that if there is already a multicast flow containing a certain channel, you won't be able to create another flow containing the same channel. If you wish to re-create flows, first select the flows to the right on device view, delete, and then follow the steps above to create a new flow. Audio will be briefly interrupted while you do this.
 
-<div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">
+<!-- <div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">
 
   <div style="flex: 1; text-align: center;">
     <img src="{{ '/images/dante-device-tx-2.png' | relative_url }}" alt="Dante" style="max-width: 100%; height: auto; display: block;">
@@ -207,6 +267,20 @@ Note that if there is already a multicast flow containing a certain channel, you
   <div style="flex: 1; text-align: center;">
     <img src="{{ '/images/dante-multicast-2.png' | relative_url }}" alt="Dante" style="max-width: 100%; height: auto; display: block;">
     <p style="font-size: 0.9em; margin-top: 8px;">Dante Multicast</p>
+  </div>
+
+</div> -->
+
+<div style="display: table; width: 100%; table-layout: fixed; border-spacing: 15px 0; margin-bottom: 20px;">
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 50%;">
+    <img src="{{ '/images/dante-device-tx-2.png' | relative_url }}" alt="Dante Device View" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">Dante Device View</p>
+  </div>
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 50%;">
+    <img src="{{ '/images/dante-multicast-2.png' | relative_url }}" alt="Dante Multicast" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">Dante Multicast</p>
   </div>
 
 </div>
