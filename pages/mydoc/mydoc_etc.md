@@ -125,9 +125,17 @@ will randomly place `Light Red`, `Light Blue`, and `Dark Pink` onto the wall. If
 
 ## Discrete Timing
 
+You can apply discrete timing at the channel or parameter level. You can combine discrete timing with Offset/Fan to make interesting things.
 
+Let's say you have two cues, `Cue 1` and `Cue 2`. `Cue 1` has the wall in `Dark Blue` and `Cue 2` has the wall in `Dark Red`. Instead of fading everything together, you want the wall to change color from left to right. In that case, while in `Cue 2`, you can do:
 
+- **\[Group\] \[405\] \[Time\] \[5\] \[Thru\] \[20\] \[Enter\]**
+- **\[Update\] \[Cue Only\] \[Enter\]**
 
+Now the first channel of that group (leftmost) will take 5 seconds to fade, while the last channel (rightmost) will take 20 seconds to fade. This creates the illusion that the color changes from left to right. You can combine this with offset to experiment with different channel selections. You can also specify you just want discrete timing on specific parameters such as intensity or color:
+
+- **\[Group\] \[405\] \{Offset\} \{Mirror Out\} \[Delay\] \[0\] \[Thru\] \[10\] \[Enter\]**
+- **\[Update\] \[Cue Only\] \[Enter\]**
 
 ## Macros
 
