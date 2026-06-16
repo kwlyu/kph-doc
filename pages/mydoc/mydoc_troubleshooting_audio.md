@@ -36,7 +36,7 @@ This is because the console is locked. If you see a black console screen with `C
 
 ## I can't control the headamps/phantom power
 
-I will show this for QL/CL and DM series, since the interfaces are different. If you still can't see headamp on the console, make sure the channels are ***patched in DANTE Controller***.
+I will show this for QL/CL and DM series, since the interfaces are different. If you still can't see headamp on the console, make sure the channels are ***patched in DANTE Controller***. When devices are unmounted and then remounted, the patching tends to disappear. 
 
 
 ### Mounting DANTE I/O on QL/CL
@@ -48,7 +48,8 @@ We use an I/O device to remotely control head amp that is connected to the QL/CL
 3. In the DEVICE SELECT window, press the `ONLINE DEVICE LIST`.
 4. Use the [TOUCH AND TURN] knob to select devices within the network, e.g., RIO1608, Shure receivers, etc..
 5. When you have finished making settings, press the OK button to close the window.
-6. Reboot the I/O devices (first) and the Console (last), in that order.
+6. Check the patching in Dante Controller.
+7. Reboot the I/O devices (first) and the Console (last), in that order.
 
 <!-- <div style="display: flex; gap: 20px;">
 
