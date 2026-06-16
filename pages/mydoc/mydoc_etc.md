@@ -15,7 +15,123 @@ Before things get crazy, it's always a good idea to know how to get back to a kn
 
 {% include image.html file="eos-macro.png" alt="ETC ION Classic" caption="Run EOS Macros" %}
 
-The content below assumes you have some basic understanding of EOS programming. If you're unsure of how to get started, consult
+The content below assumes you have some basic understanding of EOS programming. If you're unsure of how to get started, consult [Alexi Carlson](mailto:acarlson4@carleton.edu) or [Tony Stoeri](mailto:astoeri@carleton.edu). Check [here](https://youtu.be/ErKJLAFm1lM) for a video tutorial of this section.
+
+
+
+## Effects
+
+Broadly speaking, effects are when **parameters vary with time**. This gives us four basic effects:
+
+<div style="display: table; width: 100%; table-layout: fixed; border-spacing: 15px 0; margin-bottom: 20px;">
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 25%;">
+    <img src="{{ '/images/eos-effect-sine_size.png' | relative_url }}" alt="EOS Effects" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">Sine Effect</p>
+  </div>
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 25%;">
+    <img src="{{ '/images/eos-effect-step_size.png' | relative_url }}" alt="EOS Effects" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">Step Effect</p>
+  </div>
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 25%;">
+    <img src="{{ '/images/eos-effect-burst_size.png' | relative_url }}" alt="EOS Effects" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">Burst Effect</p>
+  </div>
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 25%;">
+    <img src="{{ '/images/eos-effect-ramp_size.png' | relative_url }}" alt="EOS Effects" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">Ramp Effect</p>
+  </div>
+
+</div>
+
+1. Sine effect: parameters **fades in**, and then **fades out**.
+2. Step effect: parameters **snaps in**, and then **snaps out**.
+3. Burst effect: parameters **snaps in**, and then **fades out**.
+4. Ramp effect: parameters **fades in**, and then **snaps out**.
+
+
+{% include image.html file="eos-effect-magic-sheet.png" alt="ETC ION Classic" caption="Pop-up Magic Sheet" %}
+
+### Numbering Convention
+
+The parameters can be intensity or non-intensity parameters (such as color). Our effects pop-up magic sheet is organized such that 
+
+- The unit digit represents the **type** of basic effect: sine, step, burst, ramp.
+- The hundreds and the tens represent the **color** of that effect, if applicable, i.e., the color will vary between the base color, and the color associated with that color palette.
+- The decimals represent the **grouping** of that effect, i.e., whether the effect applies to all channels one after another (grouping of 0, or spread), all channels at once (grouping of 1), every other channel (grouping of 2), etc.
+
+For intensity effects, I programmed grouping up to 8; for color effects, grouping is up to 4. For instance, if my wall is on `Color Palette 28` (Dark Pink), and I apply `Effect 163.2`, I would type:
+
+- **\[Group\] \[405\] \[Full\] \[Full\]**
+- **\[Group\] \[405\] \{Color Palette\} \[28\] \[Enter\]**
+- **\[Group\] \[405\] \[Effect\] \[163.2\] \[Enter\]**
+
+{% include image.html file="eos-ml-effects.png" alt="ETC ION Classic" caption="ML Control - Effects" %}
+
+I would see a two color burst effect being applied as groups of 2: every other channel will snap into light blue from dark pink, and then fades back gradually into dark pink again. If you clear the command line with **\[Shift\] \[Clear\]**, and press **\[Effect\]**:
+
+{% include image.html file="eos-effect-property.png" alt="ETC ION Classic" caption="Effect Property" %}
+
+You can adjust the rate and the size, and the BPM, if you know it. If you don't know what the BPM is, you can learn it by selecting the effect you wish to adjust and press:
+
+- **\[Effect\] \[163.2\] \[Enter\]**
+- **\[Learn\] \[Time\]**
+
+{% include image.html file="eos-ml-learn-bpm.png" alt="ETC ION Classic" caption="Learn BPM" %}
+
+You can now use the **\[Enter\]** key to tap to tempo. When done, press **\[Learn\]** again to finalize it. You can now save this into a cue.
+
+
+## Offset vs. Fan
+
+### Offset
+
+**\{Offset\}** applies at the ***channel level***. If you want to alter the order of the channel selection, you should use **\{Offset\}**.
+
+By default, **\[Group\] \[405\]** has our wall selected from **left to right**. If you apply:
+
+- **\[Group\] \[405\] \[Effect\] \[761\] \[Enter\]**
+
+You will see a sine wave going from left to right. If you want the sine wave to **start from the center** instead, you would apply:
+
+- **\[Group\] \[405\] \{Offset\} \{Mirror Out\} \[Effect\] \[761\] \[Enter\]**
+
+Now the sine wave would start from the center instead. There are many other orderings. If you want the wall to **split between the left half and the right half**, you can use 
+
+- **\[Group\] \[405\] \{Offset\} \{Num Groups\} \[2\] \[Effect\] \[761\] \[Enter\]**
+
+If you want the ordering to be random, you can use
+
+- **\[Group\] \[405\] \{Offset\} \{Random Channels\} \[Effect\] \[761\] \[Enter\]**
+
+Note that these ordering applies horizontally, since the original **\[Group\] \[405\]** is organized horizontally. If you want vertical orderings instead, you should use **\[Group 406\]**.
+
+You can combine **\{Offset\}** with **\{Color Palette\}**s to make things more interesting. For instance, 
+
+- **\[Group\] \[405\] \{Offset\} \{Random Channels\} \{Color Palette\} \[11\] \[+\] \[16\] \[+\] \[28\] \[Enter\]**
+
+will randomly place `Light Red`, `Light Blue`, and `Dark Pink` onto the wall. If you only select 2 color palettes, this will be equivalent to **fanning** between the two palettes, introduced below.
+
+### Fan
+
+**\{Fan\}** applies at the ***parameter level***. You can use **\{Fan\}** to have the wall fade between two colors:
+
+- **\[Group\] \[405\] \{Fan\} \{Color Palette\} \[11\] \[+\] \[16\] \[Enter\]** will fade the wall from `Light Red` (left) to `Light Blue` (Right).
+- **\[Group\] \[405\] \{Fan\} \{Color Palette\} \{Mirror Out\} \[11\] \[+\] \[16\] \[Enter\]** will fade the wall from `Light Red` (stage center) to `Light Blue` (house).
+
+
+## Discrete Timing
+
+
+
+
+
+## Macros
+
+
 
 ## Pixel Mapping
 
@@ -120,14 +236,8 @@ Any file with only red and blue icons are *two-color* effects, where you can set
 
 You can save these channels just like you would with other channels. Check [here](https://www.etcconnect.com/WebDocs/Controls/EosFamilyOnlineHelp/en/Content/12_Cues_and_Cue_Lists/CUES_AND_CUE_LISTS.htm?tocpath=Cues%20and%20Cue%20Lists%7C_____0) if you're unsure how to record them into cues.
 
-## Effects
 
 
 
 
-## Discrete Timing
-
-
-
-## Offset vs. Fan
-
+## Busking Page
