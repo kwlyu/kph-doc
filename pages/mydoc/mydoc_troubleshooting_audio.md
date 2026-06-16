@@ -94,9 +94,24 @@ We use an I/O device to remotely control head amp that is connected to the QL/CL
 
 ### Mounting DANTE I/O on DM3
 
-DM3 will automatically mount any **patched and supported** DANTE I/O. If you have a patched I/O that's not showing up, check below for their Dip Switches settings.
+DM3 will automatically mount any **patched and supported** DANTE I/O. If you have a patched I/O that's not showing up, check below for their Dip Switches settings. To check that DANTE I/Os are automatically configured:
 
+{% include image.html file="dm3-home.jpeg" alt="DM3" caption="DM3 Homescreen" %}
 
+- On the `homescreen`, press the gear icon on the top right to enter the `setup` page.
+
+{% include image.html file="dm3-setup.jpeg" alt="DM3" caption="DM3 setup" %}
+
+- From there, go to `Dante Setup`. In `Dante Setup`, you want to make sure:
+  - Unit ID is set to **Y003***,
+  - Secondary Port is set to **Daisy Chain**, and
+  - You're logged into **DANTE Domain Manager** (You might need read *and* write privileges to change the patching).
+
+{% include image.html file="dm3-dante-setup.jpeg" alt="DM3" caption="DM3 Dante setup" %}
+
+- If things are patched in Dante Controller, you can go to `I/O Device` to check that devices are patched. You want to make sure the R I/O unit has both `System` and `Sync` lights indicate green. If not, check the following section on how to set the R I/O unit and power cycle both devices.
+
+{% include image.html file="dm3-iodevice.jpeg" alt="DM3" caption="DM3 I/O Device" %}
 
 ### Note on R I/O Dip Switch settings
 

@@ -20,6 +20,16 @@ To get out of Firefox, simply press `command+q` (shortcut to quit apps on MacOS 
   Your browser does not support the video tag.
 </video>
 
+## This weird calendar thing has a menu bar on top, which I don't want
+
+This happens when Firefox couldn't properly full screen itself. It might be your palm resting on the touchpad when the Mac is trying to pull focus to the app. 
+
+{% include image.html file="calendar-firefox.png" alt="Firefox" caption="Firefox Arts Calendar" %}
+
+To properly full screen firefox, press `ctrl+shift+f`.
+
+To **quit Firefox properly**, always make sure you press `command+q` and `return` to confirm. Otherwise, Firefox is still on the extended screen, and it might be overlaid on top of any QLab text cues you want to run.
+
 ## The lower thirds are "out of order" 
 
 If you're seeing the lower thirds key (black) still overlaying on the program after the cue, or the QLab cues are first fading out the keying and then fading in the keying (as opposed to fading in the key and then taking out the key), chances are the `DSK` was left on / accidentally triggered before you run the QLab cues. If you **accidentally `panic` (`escape`) QLab cues too early**, you might end up in this situation. 
@@ -87,3 +97,10 @@ Lastly, on the same computer, open AV Bridge (formerly atemOSC) from the dock. T
 This is an instance where there might be **multiple** QLab workspaces open, and the program is having trouble discerning which workspace to prioritize. Close any additional workspace and trigger the cue again.
 
 
+## I'm seeing some weird characters when I try to enter texts
+
+You might see the following when you want to enter texts in QLab:
+
+{% include image.html file="mac-switch-input-source.png" alt="Input Source" caption="Input Source" %}
+
+This is the Chinese characters input source on MacOS. To go back to English, press `fn` or the {% include inline_image.html file="mac-globe-size.png" alt="Mac Globe Key" %} `globe key` to switch between input sources.  

@@ -45,6 +45,10 @@ Instead, I offer you a list of tech supports that you can reach out to:
 - [(408) 954-0550](tel:4089540550)
 - [Submit a ticket](https://www.blackmagicdesign.com/support/contact/email) here.
 
+### QLab
+
+- [support@figure53.com](mailto:support@figure53.com)
+
 
 ### Extron
 
