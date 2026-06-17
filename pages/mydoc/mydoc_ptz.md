@@ -62,6 +62,20 @@ We don't recommend the auto-exposure (AE) function. It simply looks bad.
 
 By opening up the iris to its max setting, we're letting as much light into the camera as possible. This reduces the level of noise in our video.
 
+### Adjusting the white balance
+
+We don't recommend the auto-adjust white balance function. It simply looks bad.
+
+{% include image.html file="ptz-rm-menu.png" alt="Sony PTZ" caption="RM Menu" %}
+
+1. Select the target camera to control.
+2. Go to `RM MENU > OPERATION > WHITE`. Set `WB MODE` to `MANUAL`.
+3. Adjust the white balance using the `R-WHITE` knob and the `B-WHITE` knob.
+
+{% include image.html file="ptz-wb.png" alt="Sony PTZ" caption="White Balance Control" %}
+
+We find that you achieve best results when ***`R.WHITE = +60` and `B.WHITE = +70`***.
+
 ## Storing the Camera Presets
 
 All camera parameters we just mentioned can be stored as presets to recall during the show. 

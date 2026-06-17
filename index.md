@@ -14,6 +14,8 @@ summary: These brief instructions will help you get started quickly with concert
 
 You can download the PDF version of this documentation Download from <a alt='KL-Showfile' href='https://github.com/kwlyu/kph-documentation/raw/refs/heads/main/pdf/mydoc.pdf'>here</a>.
 
+The navigation blocks above mimics the steps you might encounter for your shifts here. The following establishes some basic concepts.
+
 
 ## Parts of a Theater
 

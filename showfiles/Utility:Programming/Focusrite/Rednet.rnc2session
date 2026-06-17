@@ -1,0 +1,31 @@
+<rnc2appState>
+ <devices>
+  <device name="Red8Pre-Perform6" productId="00" serialNumber="1017510" canOverwriteModelID="false" model="Red 8Pre" manufacturer="Focusrite Audio Engineering Ltd." macAddress="001dc113a2c2">
+   <plugin midiChannel="-1" postFaderMeters="1" reducedMetering="0"/>
+  </device>
+ </devices>
+ <window>
+  <windowSettings x="0" isExpansion="false" y="25" height="1027" fullscreen="false" editingEnabled="true" maximized="true" width="1920"/>
+  <tabs current="0">
+   <tab tabType="networkGrid" name="Tab 2" rows="1" cols="1" sampleRate="48000" pullUp="None">
+    <cell name="Red8Pre-Perform6" productId="00" row="0" model="Red 8Pre" manufacturer="Focusrite Audio Engineering Ltd." col="0"/>
+   </tab>
+  </tabs>
+  <deviceFilters>
+   <searchText></searchText>
+   <rednetModels>
+    <model>Red 8Pre</model>
+    <model>Red 8 Pre</model>
+   </rednetModels>
+   <thirdParty>off</thirdParty>
+   <tabs/>
+   <notInTab>off</notInTab>
+   <sampleRates/>
+   <pullUps/>
+  </deviceFilters>
+ </window>
+ <ddm>
+  <server-discovery type="AUTOMATIC"/>
+ </ddm>
+ <pairings/>
+</rnc2appState>

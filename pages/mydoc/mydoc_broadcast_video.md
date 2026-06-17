@@ -176,7 +176,7 @@ You're typically scheduled to arrive **1-2 hours before** the event. Performers 
 2. After completing the title page, you should run the cue with `space`. This brings it onto `Input 7` of the ATEM. 
 3. **Set Output 1 (Crestron DA) to QLab**. (You can also achieve this via `Macro 2` in ATEM.)
 
-### Rehearsals:
+### Rehearsals
 
 Rehearsals start **1-1.5 hours before** the event. Performers may run pieces according to the program, but they may not.
 
@@ -184,7 +184,7 @@ Rehearsals start **1-1.5 hours before** the event. Performers may run pieces acc
 2. Use this rehearsal time to finish any lower-thirds and credits.
 3. Adjust the audio levels during run-throughs.
 
-### Preshow:
+### Preshow
 
 1. **30 minutes before** the event, you should finish all prep work, including any graphics, presets, and audio levels.
 2. When done, press `space` to bring up the `Title` cue in QLab, and bring the QLab input (`Input 7`) to `Program`, and set **Output 1 (Crestron DA) to `Program`**. (You can also achieve this via `Macro 1` in ATEM.)
@@ -193,13 +193,27 @@ Rehearsals start **1-1.5 hours before** the event. Performers may run pieces acc
 5. **15 minutes before** the event, format an SD card and start the stream, if applicable. You can greet the audience in the [livestream chat](https://go.carleton.edu/carletonlive), if you want. You should use one of the Carleton computers, so you're logged in as `Carleton College`.
 6. **5 minutes before** the event, start the recording.
 
+- You may use the following cue to start recording and streaming at the same time.
+
+{% include image.html file="qlab-start-r+s.png" alt="QLab" caption="Start Recording and Streaming" %}
+
+- When you don't need to stream, make sure you **`disarm`** the streaming cue by unchecking the `Armed` box of the `Start Nano Streaming` Cue. This disables this particular cue from running.
+
+{% include image.html file="qlab-disarm.png" alt="QLab" caption="Disarm Streaming" %}
+
 ### During the show
 - Press space to advance the lower thirds cues. Select / use `up` or `down` arrows to choose different cues in case order changes.
 
-### Postshow:
+### Postshow
+
+- Fire the post-show sequence
+
+{% include image.html file="qlab-post.png" alt="QLab" caption="Post-show sequence" %}
+
 1. The postshow sequence in QLab will automatically stop the Hyperdeck recording. The Pearl Nano recording needs to be stopped manually.
 2. When the indicator light on the Hyperdeck stops being red, this means the deck has finished writing to the disk. Only take out the SD card until **AFTER** the disk has finished writing.
 3. The Pearl Nano will automatically transfer its recording to our NAS.
 4. Manually transfer the Hyperdeck recording to the Mac Studio in the recording booth (M102A). Give the file a legible name consistent with our naming convention, and store it under the `Pre-Edited Media` folder in the `KPH Team Drive`.
 5. Shut down and leave.
 
+- Alternatively, you may use `Hyperduck` to transfer recording from the Hyperdeck to the NAS. See [here](mydoc_troubleshooting_network.html#how-do-i-transfer-files-from-the-hyperdeck-to-the-nas) on how to do it.

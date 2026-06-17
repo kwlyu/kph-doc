@@ -58,3 +58,10 @@ You can now open our NAS and drag desired files from the Hyperdeck into a NAS fo
 </div>
 
 While you're transferring, Cyberduck will show you the real-time statistics and give you a confirmation when done.
+
+
+## How do I use the iPad to control the light board?
+
+On the iPad, make sure your Wi-Fi is connected to `Kracum Lighting`. Go to the lighting folder, open `MobileRFR`. It should connect to `WCC ION (10.101.100.101)` automatically. You can then use the `Facepanel` or the `Channel Check` function to control the light board.
+
+After you're done, switch the Wi-Fi back to `eduroam`.
