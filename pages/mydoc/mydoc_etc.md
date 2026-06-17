@@ -23,7 +23,7 @@ The content below assumes you have some basic understanding of EOS programming. 
 
 Broadly speaking, effects are when **parameters vary with time**. This gives us four basic effects:
 
-<div style="display: table; width: 100%; table-layout: fixed; border-spacing: 15px 0; margin-bottom: 20px;">
+<div style="display: table; width: 99%; table-layout: fixed; border-spacing: 10px 0; margin-bottom: 20px;">
 
   <div style="display: table-cell; text-align: center; vertical-align: top; width: 25%;">
     <img src="{{ '/images/eos-effect-sine_size.png' | relative_url }}" alt="EOS Effects" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
