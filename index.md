@@ -12,7 +12,7 @@ summary: These brief instructions will help you get started quickly with concert
 
 {% include note.html content="If you're reading this documentation, you're probably doing concert/theater of some kind. I have a <a alt='KL-youtube' href='https://www.youtube.com/@kwlyu'> YouTube Channel</a> hosting some example work. " %}
 
-You can download the PDF version of this documentation Download from <a alt='KL-Showfile' href='https://github.com/kwlyu/kph-documentation/raw/refs/heads/main/pdf/mydoc.pdf'>here</a>.
+You can download the PDF version of this documentation Download from <a alt='KL-Showfile' href='https://github.com/kwlyu/kph-documentation/raw/refs/heads/main/pdf/mydoc.pdf'>here</a>. Download show file backups <a alt='KL-Showfile' href='https://github.com/kwlyu/kph-documentation/raw/refs/heads/main/showfiles/KL_backups.zip'>here</a>.
 
 The navigation blocks above mimic the steps you might encounter for your shifts here. The following establishes some basic concepts.
 
