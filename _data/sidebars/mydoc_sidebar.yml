@@ -48,10 +48,6 @@ entries:
       url: /mydoc_broadcast_video.html
       output: web, pdf
 
-    - title: Support
-      url: /mydoc_support.html
-      output: web, pdf
-
   - title: Fundamentals
     output: web, pdf
     folderitems:
@@ -66,6 +62,10 @@ entries:
     
     - title: ETC
       url: /mydoc_etc.html
+      output: web, pdf
+
+    - title: Resources
+      url: /mydoc_resources.html
       output: web, pdf
 
   - title: Troubleshooting
@@ -83,4 +83,8 @@ entries:
 
     - title: Network isn't working
       url: /mydoc_troubleshooting_network.html
+      output: web, pdf
+    
+    - title: Support
+      url: /mydoc_support.html
       output: web, pdf

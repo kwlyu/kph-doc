@@ -127,19 +127,104 @@ will randomly place `Light Red`, `Light Blue`, and `Dark Pink` onto the wall. If
 
 You can apply discrete timing at the channel or parameter level. You can combine discrete timing with Offset/Fan to make interesting things.
 
+### Time
+
 Let's say you have two cues, `Cue 1` and `Cue 2`. `Cue 1` has the wall in `Dark Blue` and `Cue 2` has the wall in `Dark Red`. Instead of fading everything together, you want the wall to change color from left to right. In that case, while in `Cue 2`, you can do:
 
 - **\[Group\] \[405\] \[Time\] \[5\] \[Thru\] \[20\] \[Enter\]**
 - **\[Update\] \[Cue Only\] \[Enter\]**
 
-Now the first channel of that group (leftmost) will take 5 seconds to fade, while the last channel (rightmost) will take 20 seconds to fade. This creates the illusion that the color changes from left to right. You can combine this with offset to experiment with different channel selections. You can also specify you just want discrete timing on specific parameters such as intensity or color:
+<video autoplay loop muted playsinline width="100%">
+  <source src="{{ '/videos/eos-discrete-time.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+Now the first channel of that group (leftmost) will take 5 seconds to fade, while the last channel (rightmost) will take 20 seconds to fade. This creates the illusion that the color changes from left to right. Once you've updated the cue, you will see a small `+` on the top right of cue times to indicate that you've applied discrete timing. To get rid of discrete timing: press
+
+- **\[Group\] \[405\] \[Time\] \[Enter\]**
+- **\[Update\] \[Cue Only\] \[Enter\]**
+
+
+### Delay
+
+Alternatively, you can use delay and offset to make things more dramatic. You can also specify you just want discrete timing on specific parameters such as intensity or color:
 
 - **\[Group\] \[405\] \{Offset\} \{Mirror Out\} \[Delay\] \[0\] \[Thru\] \[10\] \[Enter\]**
 - **\[Update\] \[Cue Only\] \[Enter\]**
 
+<video autoplay loop muted playsinline width="100%">
+  <source src="{{ '/videos/eos-discrete-delay-mo.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+To get rid of discrete delays: press
+
+- **\[Group\] \[405\] \[Delay\] \[Enter\]**
+- **\[Update\] \[Cue Only\] \[Enter\]**
+
+
+##### Delay vs Time
+
+{% include image.html file="delay-v-time.png" alt="ETC ION Classic" caption="Cue Timing" %}
+
+<!-- <div style="display: flex; gap: 10px; justify-content: center; align-items: start;">
+
+<div style="display: table-cell; text-align: center; vertical-align: top; width: 50%;">
+        <video autoplay loop muted playsinline style="width: 50%; height: auto;">
+            <source src="{{ '/videos/eos-discrete-time_crop.mp4' | relative_url }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">Using Discrete Time</p>
+</div>
+
+<div style="display: table-cell; text-align: center; vertical-align: top; width: 50%;">
+
+  <video autoplay loop muted playsinline style="width: 50%; height: auto;">
+    <source src="{{ '/videos/eos-discrete-delay_crop.mp4' | relative_url }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">Using Discrete Delay</p>
+
+</div>
+
+</div> -->
+
+
+<div style="display: table; width: 100%; table-layout: fixed; border-spacing: 15px 0; margin-bottom: 20px;">
+
+  <!-- Column 1 -->
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 50%;">
+    <video autoplay loop muted playsinline style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+      <source src="{{ '/videos/eos-discrete-time_crop.mp4' | relative_url }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">Using Discrete Time</p>
+  </div>
+
+  <!-- Column 2 -->
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 50%;">
+    <video autoplay loop muted playsinline style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+      <source src="{{ '/videos/eos-discrete-delay_crop.mp4' | relative_url }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">Using Discrete Delay</p>
+  </div>
+
+</div>
+
 ## Macros
 
+You might come across a time when you have to do repeated updates for multiple cues in the cue list, and there might be `auto-blocks` preventing you from `tracking` through (or that you just want to apply changes to some but not all cues afterwards). You can use `Macro`s to easily achieve this. Go to the first cue where you want to apply the changes:
 
+- **\[Learn\] \[456\] \[Enter\]**
+- **\[Enter\]** again to confirm you want to overwrite. Now apply the changes
+- **\[Group\] \[405\] \{Int Palette\} \[100\] \[Enter\]** ... 
+- **\[Update\] \[Cue Only\] \[Enter\]**
+- **\[Learn\]** to save.
+
+Now use **\[Shift\] \[GO\]** to advance. Once you're in the cue you want the changes to apply, single-click `Macro 456` to apply the changes. Repeat this step for all cues you want to change.
+
+{% include image.html file="eos-macro-456.png" alt="ETC ION Classic" caption="Repeated Update Macro" %}
 
 ## Pixel Mapping
 
@@ -249,3 +334,67 @@ You can save these channels just like you would with other channels. Check [here
 
 
 ## Busking Page
+
+Typically, theatrical lighting assumes linear playback. You design all cues in advance, and go through each cue when the time comes. This requires the designer to be familiar with the piece being performed, and that there is some rehearsal time for that design process to happen.
+
+More often than not, you'll find yourself in situations where you don't know what's going to happen. Linear playback becomes less feasible. Most concert lighting, in contrast, typically assumes non-linear playback. For convenience, I've set up the board and the fader wing to do that. `Macro 3` takes you to the busking setup. When you run **\[Macro\] \[3\]**, you will notice that the board and the fader shifts to the following:
+
+<div style="display: table; width: 100%; table-layout: fixed; border-spacing: 15px 0; margin-bottom: 20px;">
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 50%;">
+    <img src="{{ '/images/eos-busking-screen1.png' | relative_url }}" alt="ION Busking Screen 1" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">ION Busking Screen 1</p>
+  </div>
+
+  <div style="display: table-cell; text-align: center; vertical-align: top; width: 50%;">
+    <img src="{{ '/images/eos-busking-screen2.png' | relative_url }}" alt="ION Busking Screen 2" style="width: 100%; max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.9em; margin-top: 8px; line-height: 1.2;">ION Busking Screen 2</p>
+  </div>
+
+</div>
+
+Meanwhile, the fader wing is displaying `Page 9-10`. These are direct selects where you can quickly play according to the music. The faders have cue lists and effects where you can advance and adjust the effect rates according to the music. 
+
+### A/B Color
+
+These are `Scenes` where the wall colors are split into two groups. You can double-click to quickly change half of the wall to a different color.
+
+{% include image.html file="eos-busking-colorab.png" alt="ETC ION Classic" caption="A/B Color" %}
+
+### Effects
+
+These are `Scenes` containing basic intesity effects, the white color effects, and rainbow special effects. They have groupings up to 2. Typically, one uses `White` as an **accent color**. You can combine it with different base colors, whether it be A/B colors or whatever color it is in the current cue.
+
+{% include image.html file="eos-busking-effects.png" alt="ETC ION Classic" caption="Effects" %}
+
+### Colors Full
+
+These are `Scenes` where the entire group of fixtures uses just one color (grouping of 1).
+
+{% include image.html file="eos-busking-colorfull.png" alt="ETC ION Classic" caption="Full Colors" %}
+
+### A/B Color
+
+These are color macros that applies color palettes to `Cue 997/1 Thru 2`. Instead of being applied immediately, they only apply when you advance into those cues, so you can use the **\[GO\]** button to tap it to tempo.
+
+{% include image.html file="eos-busking-colormacro.png" alt="ETC ION Classic" caption="Color Macro" %}
+
+### Fader Config
+
+The fader wing contains some similar functionalities with more tactile control. For instance, they allow you to advance hidden cue lists more easily, adjust the effect size and rate live, and run macros.
+
+{% include image.html file="eos-busking-fader-config.png" alt="ETC ION Classic" caption="Fader Config" %}
+
+### Transition Cues
+
+In particular, `Cue 999/1` is a default transition cue (that you use when there's no projection). It stops any running effect and renders the stage into a blue-out. This is mapped to the usual fader pages 11-12 (`Fader 12/8`) as well.
+
+{% include image.html file="eos-busking-fader-page.png" alt="ETC ION Classic" caption="Fader Pages 9-10" %}
+
+Pressing the bottom button takes you into the default transition cue, and pressing the top releases that cue. You can **advance cues while in the transition cue and release it when you're in the new cue**.
+
+{% include image.html file="eos-fader-trans.jpeg" alt="ETC ION Classic" caption="Transition Cue" %}
+
+When you're using projection, you can click `Macro 998` to map `Cue 998/1` instead to this fader. This simply applies `Int Palette 100` to the wall, making the center of the stage dimmer around the projector screen.
+
+{% include image.html file="eos-macro-trans.png" alt="ETC ION Classic" caption="Transition Macros" %}
