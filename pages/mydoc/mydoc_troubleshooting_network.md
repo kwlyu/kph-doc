@@ -23,7 +23,7 @@ Enter your full Carleton email and password. You can save these credentials in y
 
 {% include image.html file="nas-folder.png" alt="Mount Network Drive" caption="Kracum Folder" %}
 
-If you want to have this folder open automatically when the computer boots up, go to `System Settings`, `General`, and `Login Items & Extensions`. Then click the `+` icon and select the Kracum folder from the sidebar. If you've remembered your credentials in the keychain, the folder will launch at system start up.
+If you want to have this folder open automatically when the computer boots up, go to `System Settings`, `General`, and `Login Items & Extensions`. Then click the `+` icon and select the Kracum folder from the sidebar. If you've remembered your credentials in the keychain, the folder will launch at system start-up.
 
 
 ## How do I transfer files from the HyperDeck to the NAS?
@@ -41,7 +41,7 @@ Now you should see a bookmark like that in step 1. You can double-click the book
 
 {% include image.html file="cyberduck-filetree.png" alt="Cyberduck" caption="Cyberduck File Tree" %}
 
-You can now open our NAS and drag the desired files from the HyperDeck into a NAS folder. I recommend putting it inside a designated folder to keep things organized. An example would be `/Volumes/kracum/Recording Media/Video/1_Pre-Edit_Media/BMD`.
+You can now open our NAS and drag the desired files from the HyperDeck into a NAS folder. I recommend putting them inside a designated folder to keep things organized. An example would be `/Volumes/kracum/Recording Media/Video/1_Pre-Edit_Media/BMD`.
 
 <div style="display: table; width: 100%; table-layout: fixed; border-spacing: 15px 0; margin-bottom: 20px;">
 

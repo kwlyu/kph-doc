@@ -239,7 +239,7 @@ You should see the following devices:
 Now that you're logged in, choose the Transmitting device you wish to configure multicast on. In my example, I'll be using Kracum's Symetrix Prism DSP:
 
 1. Double-click the transmitter to bring up the device view. Navigate to the `Transmit` tab. Click the multicast icon, highlighted in red below.
-2. This brings up the page to create multicast flows, if there isn't one already configured. Click `Dante`, choose `8` for max channels per flow, and select the channels. You may pick specific channels, but you can also simply `Select All`. Click `Create` to finish.
+2. This brings up the page to create multicast flows, if none are already configured. Click `Dante`, choose `8` for max channels per flow, and select the channels. You may pick specific channels, but you can also simply `Select All`. Click `Create` to finish.
 
 <!-- <div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">
 
