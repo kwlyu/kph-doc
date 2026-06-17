@@ -11,7 +11,7 @@ folder: mydoc
 
 ## I can't see the NAS
 
-On the Mac you wish to connect to the NAS, go to `Finder`, hit `cmd+k`. You should see the following.
+On the Mac you wish to connect to the NAS, go to `Finder`, hit `Command + K`. You should see the following.
 
 {% include image.html file="smb.png" alt="Mount Network Drive" caption="Mounting Network Drives" %}
 
@@ -19,29 +19,29 @@ Enter this [smb://colossus.its.carleton.edu/kracum](smb://colossus.its.carleton.
 
 {% include image.html file="smb-login.png" alt="Mount Network Drive" caption="NAS LDAP Authentication" %}
 
-Enter your full Carleton email and password. You may remember this in the keychain if you don't want to re-enter this information. You should be able to see this folder.
+Enter your full Carleton email and password. You can save these credentials in your keychain to avoid re-entering them. The folder should now be visible.
 
 {% include image.html file="nas-folder.png" alt="Mount Network Drive" caption="Kracum Folder" %}
 
 If you want to have this folder open automatically when the computer boots up, go to `System Settings`, `General`, and `Login Items & Extensions`. Then click the `+` icon and select the Kracum folder from the sidebar. If you've remembered your credentials in the keychain, the folder will launch at system start up.
 
 
-## How do I transfer files from the hyperdeck to the NAS?
+## How do I transfer files from the HyperDeck to the NAS?
 
-Our BMD Hyperdeck supports FTP, which means we can download and upload its recordings without having to remove the media. To do this, launch **Cyberduck** {% include inline_image.html file="cyberduck_size.png" alt="Cyberduck button" %} in the dock.
+Our BMD HyperDeck supports FTP, which means we can download and upload its recordings without having to remove the media. To do this, launch **Cyberduck** {% include inline_image.html file="cyberduck_size.png" alt="Cyberduck button" %} in the Dock.
 
 {% include image.html file="cyberduck-bookmark.png" alt="Cyberduck" caption="Cyberduck Bookmark" %}
 
-1. If you don't see a bookmark called **KPH Hyperdeck** already, click the `+` icon on the bottom left to create a connection. If you do, skip the follow step.
-2. Enter the **nickname**, **server address** ([10.130.18.106](10.130.18.106)), and enable **anonymous login** like below. You can now connect to the hyperdeck.
+1. If you don't see a bookmark called **KPH HyperDeck** already, click the `+` icon on the bottom left to create a connection. If you do, skip the following step.
+2. Enter the **nickname**, **server address** ([10.130.18.106](10.130.18.106)), and enable **anonymous login** as shown below. You can now connect to the HyperDeck.
 
 {% include image.html file="cyberduck-new-bookmark.png" alt="Cyberduck" caption="Create Cyberduck Bookmark" %}
 
-Now you should see a bookmark like that in step 1. You can double-click the bookmark to view the files inside the Hyperdeck. 
+Now you should see a bookmark like that in step 1. You can double-click the bookmark to view the files inside the HyperDeck. 
 
 {% include image.html file="cyberduck-filetree.png" alt="Cyberduck" caption="Cyberduck File Tree" %}
 
-You can now open our NAS and drag desired files from the Hyperdeck into a NAS folder. I recommend putting it inside a designated folder to keep things organized. An example would be `/Volumes/kracum/Recording Media/Video/1_Pre-Edit_Media/BMD`.
+You can now open our NAS and drag the desired files from the HyperDeck into a NAS folder. I recommend putting it inside a designated folder to keep things organized. An example would be `/Volumes/kracum/Recording Media/Video/1_Pre-Edit_Media/BMD`.
 
 <div style="display: table; width: 100%; table-layout: fixed; border-spacing: 15px 0; margin-bottom: 20px;">
 
@@ -57,7 +57,7 @@ You can now open our NAS and drag desired files from the Hyperdeck into a NAS fo
 
 </div>
 
-While you're transferring, Cyberduck will show you the real-time statistics and give you a confirmation when done.
+While transferring, Cyberduck will display real-time statistics and provide a confirmation when complete.
 
 
 ## How do I use the iPad to control the light board?

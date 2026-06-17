@@ -236,9 +236,9 @@ You should see the following devices:
 
 {% include image.html file="dante-perform.png" alt="Dante" caption="Dante Performance Domain" %}
 
-Now that you're logged in, choose the Transmitting device you wish to configure multicast on. In my example, I'll be using Kracum' Symetrix Prism DSP:
+Now that you're logged in, choose the Transmitting device you wish to configure multicast on. In my example, I'll be using Kracum's Symetrix Prism DSP:
 
-1. Double-click the transmitter to bring up the device view. Navigate to the transmit tab. Click the multicast icon, highlighted in red below.
+1. Double-click the transmitter to bring up the device view. Navigate to the `Transmit` tab. Click the multicast icon, highlighted in red below.
 2. This brings up the page to create multicast flows, if there isn't one already configured. Click `Dante`, choose `8` for max channels per flow, and select the channels. You may pick specific channels, but you can also simply `Select All`. Click `Create` to finish.
 
 <!-- <div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">
@@ -271,7 +271,7 @@ Now that you're logged in, choose the Transmitting device you wish to configure 
 </div>
 
 
-Note that if there is already a multicast flow containing a certain channel, you won't be able to create another flow containing the same channel. If you wish to re-create flows, first select the flows to the right on device view, delete, and then follow the steps above to create a new flow. Audio will be briefly interrupted while you do this.
+Note that if there is already a multicast flow containing a certain channel, you won't be able to create another flow containing the same channel. If you wish to re-create flows, first select the flows to the right on the device view, delete them, and then follow the steps above to create a new flow. Audio will be briefly interrupted while you do this.
 
 <!-- <div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">
 
