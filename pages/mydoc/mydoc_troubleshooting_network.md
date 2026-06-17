@@ -62,6 +62,6 @@ While transferring, Cyberduck will display real-time statistics and provide a co
 
 ## How do I use the iPad to control the light board?
 
-On the iPad, make sure your Wi-Fi is connected to `Kracum Lighting`. Go to the lighting folder, open `MobileRFR`. It should connect to `WCC ION (10.101.100.101)` automatically. You can then use the `Facepanel` or the `Channel Check` function to control the light board.
+On the iPad, make sure your Wi-Fi is connected to `Kracum Lighting`. Go to the `Lighting` folder, open `MobileRFR`. It should connect to `WCC ION (10.101.100.101)` automatically. You can then use the `Facepanel` or the `Channel Check` function to control the light board.
 
 After you're done, switch the Wi-Fi back to `eduroam`.
