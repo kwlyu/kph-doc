@@ -9,7 +9,7 @@ permalink: mydoc_etc.html
 folder: mydoc
 ---
 
-Before things get crazy, it's always a good idea to know how to get back to a known stage. `Macro 1` is the startup macro that restores every tab to their default location. If you're ever lost in the tabs and wants to get back to a familiar place, press:
+Before things get crazy, it's always a good idea to know how to get back to a known stage. `Macro 1` is the startup macro that restores every tab to their default location. If you're ever lost in the tabs and want to get back to a familiar place, press:
 
 - **\[Macro\] \[1\] \[Enter\]**
 
@@ -107,7 +107,7 @@ If you want the ordering to be random, you can use
 
 - **\[Group\] \[405\] \{Offset\} \{Random Channels\} \[Effect\] \[761\] \[Enter\]**
 
-Note that these ordering applies horizontally, since the original **\[Group\] \[405\]** is organized horizontally. If you want vertical orderings instead, you should use **\[Group 406\]**.
+Note that this ordering applies horizontally, since the original **\[Group\] \[405\]** is organized horizontally. If you want vertical orderings instead, you should use **\[Group 406\]**.
 
 You can combine **\{Offset\}** with **\{Color Palette\}**s to make things more interesting. For instance, 
 
@@ -228,7 +228,7 @@ Now use **\[Shift\] \[GO\]** to advance. Once you're in the cue you want the cha
 
 ## Pixel Mapping
 
-There's a pixel map already configured for this hall. It represents a 1-1 map of the LED Wall Panels. To make our lives easier, you can use `Macro 2` to view and edit those channels. You monitors will instead look like this.
+There's a pixel map already configured for this hall. It represents a 1-1 map of the LED Wall Panels. To make our lives easier, you can use `Macro 2` to view and edit those channels. Your monitors will instead look like this.
 
 - **\[Macro\] \[2\] \[Enter\]**
 
@@ -310,7 +310,7 @@ For instance, if we select `File 8` in ML Controls, you will see the following r
   Your browser does not support the video tag.
 </video>
 
-You may adjust any non-intesity parameter from the ML Controls tab, including playback speed.
+You may adjust any non-intensity parameter from the ML Controls tab, including playback speed.
 
 
 
@@ -375,7 +375,7 @@ These are `Scenes` where the entire group of fixtures uses just one color (group
 
 ### A/B Color
 
-These are color macros that applies color palettes to `Cue 997/1 Thru 2`. Instead of being applied immediately, they only apply when you advance into those cues, so you can use the **\[GO\]** button to tap it to tempo.
+These are color macros that apply color palettes to `Cue 997/1 Thru 2`. Instead of being applied immediately, they only apply when you advance into those cues, so you can use the **\[GO\]** button to tap it to tempo.
 
 {% include image.html file="eos-busking-colormacro.png" alt="ETC ION Classic" caption="Color Macro" %}
 

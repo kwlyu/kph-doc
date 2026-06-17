@@ -16,7 +16,7 @@ folder: mydoc
 
 We use an [Blackmagic Hyperdeck Studio Mini](https://www.blackmagicdesign.com/products/hyperdeckstudio/techspecs/W-HYD-11) as our recorder. It takes SDI input from `output 2` of the Constellation switcher, which is always set to `Program`.
 
-You should format an SD Card via its front LCD based menu settings. To plug in an SD card:
+You should format an SD Card via its front LCD-based menu settings. To plug in an SD card:
 
 1. Hold the SD card with the gold connectors facing your HyperDeck’s LCD and align it with the media slot. Now gently push the card into the slot until you feel it lock firmly into place.
 2. Your HyperDeck will verify the SD card. This is shown by an illuminated green indicator above the SD card slot. When the indicator turns off and the stop button on the control panel is illuminated, your HyperDeck is ready to record.
@@ -172,7 +172,7 @@ By this point, you should be able to start a show. Typically, this is what a tec
 
 You're typically scheduled to arrive **1-2 hours before** the event. Performers typically arrive 15-30 minutes after you arrive.
 
-1. Video: You should use the time before artists arrive to start building the QLab graphics. At the very least, you sould be able to complete the **Title** page. 
+1. Video: You should use the time before artists arrive to start building the QLab graphics. At the very least, you should be able to complete the **Title** page. 
 2. After completing the title page, you should run the cue with `space`. This brings it onto `Input 7` of the ATEM. 
 3. **Set Output 1 (Crestron DA) to QLab**. (You can also achieve this via `Macro 2` in ATEM.)
 
@@ -189,7 +189,7 @@ Rehearsals start **1-1.5 hours before** the event. Performers may run pieces acc
 1. **30 minutes before** the event, you should finish all prep work, including any graphics, presets, and audio levels.
 2. When done, press `space` to bring up the `Title` cue in QLab, and bring the QLab input (`Input 7`) to `Program`, and set **Output 1 (Crestron DA) to `Program`**. (You can also achieve this via `Macro 1` in ATEM.)
 3. We typically start and end transitions with a wide shot; you can use `House Center` for this. Once you've done that, wait until the house opens, and bring `Input 2` to `Program`.
-4. Once you've brought `Input 2` to `Program`, you can `espace` to **panic** the QLab title cue. This is to prevent the `Title` cue to overlap with any following Lower Thirds cues.
+4. Once you've brought `Input 2` to `Program`, you can `escape` to **panic** the QLab title cue. This is to prevent the `Title` cue to overlap with any following Lower Thirds cues.
 5. **15 minutes before** the event, format an SD card and start the stream, if applicable. You can greet the audience in the [livestream chat](https://go.carleton.edu/carletonlive), if you want. You should use one of the Carleton computers, so you're logged in as `Carleton College`.
 6. **5 minutes before** the event, start the recording.
 
@@ -211,7 +211,7 @@ Rehearsals start **1-1.5 hours before** the event. Performers may run pieces acc
 {% include image.html file="qlab-post.png" alt="QLab" caption="Post-show sequence" %}
 
 1. The postshow sequence in QLab will automatically stop the Hyperdeck recording. The Pearl Nano recording needs to be stopped manually.
-2. When the indicator light on the Hyperdeck stops being red, this means the deck has finished writing to the disk. Only take out the SD card until **AFTER** the disk has finished writing.
+2. When the indicator light on the Hyperdeck stops being red, this means the deck has finished writing to the disk. Do not take out the SD card until **AFTER** the disk has finished writing.
 3. The Pearl Nano will automatically transfer its recording to our NAS.
 4. Manually transfer the Hyperdeck recording to the Mac Studio in the recording booth (M102A). Give the file a legible name consistent with our naming convention, and store it under the `Pre-Edited Media` folder in the `KPH Team Drive`.
 5. Shut down and leave.

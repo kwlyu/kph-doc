@@ -14,7 +14,7 @@ summary: These brief instructions will help you get started quickly with concert
 
 You can download the PDF version of this documentation Download from <a alt='KL-Showfile' href='https://github.com/kwlyu/kph-documentation/raw/refs/heads/main/pdf/mydoc.pdf'>here</a>.
 
-The navigation blocks above mimics the steps you might encounter for your shifts here. The following establishes some basic concepts.
+The navigation blocks above mimic the steps you might encounter for your shifts here. The following establishes some basic concepts.
 
 
 ## Parts of a Theater
@@ -29,13 +29,13 @@ The area of the stage furthest from the audience is **upstage**, and the closest
 
 ### House
 
-The house is any area that is not backstage or onstage. Typically, this refers to anywhere the audience is seated. Therefore, the house positions are in the perpectives of the audience. **House Left** is the audience's left, and **House Right** is the audience's right. (For a typically proscenium stage, House Left is in front of Stage Right.)
+The house is any area that is not backstage or onstage. Typically, this refers to anywhere the audience is seated. Therefore, the house positions are in the perspectives of the audience. **House Left** is the audience's left, and **House Right** is the audience's right. (For a typical proscenium stage, House Left is in front of Stage Right.)
 
 #### Front of House
 
 This is a broad category that can contain multiple positions:
 
-- Control Booth: The section of the theatre designated for the operation of live lighting/audio/video equipment, and is sometimes the location of the stage manager's station. 
+- Control Booth: The section of the theater designated for the operation of live lighting/audio/video equipment, and is sometimes the location of the stage manager's station. 
 
 - Lobby / Box Office: The public entry to the building from the outside. 
 

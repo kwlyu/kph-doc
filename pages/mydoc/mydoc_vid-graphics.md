@@ -18,13 +18,13 @@ If you haven't already, make sure you launch **QLab 5** {% include inline_image.
 
 {% include image.html file="QLab-Open-Screen.png" alt="QLab5" caption="This is a sample QLab Homescreen." %}
 
-{% include note.html content=" Your home screen will look different from this depending on what has been opened in the past. QLab ranks the list of show files by how recently it was open (higher is more recent). If you can't find the template, you have a few options:
+{% include note.html content=" Your home screen will look different from this depending on what has been opened in the past. QLab ranks the list of show files by how recently they were opened (higher is more recent). If you can't find the template, you have a few options:
 
 <br>1. Check the **desktop** of your computer.
 <br>2. Select **New Workspace from template \"KL Template...\"**.
 <br>3. Download from <a alt='KL-Showfile' href='https://github.com/kwlyu/kph-documentation/raw/refs/heads/main/showfiles/KL%20Template%20QLab5+ATEM+EOS.qlab5'>here</a>.<br>
 
-Understand that option 2 and 3 might present you with obsolete show files." %}
+Understand that options 2 and 3 might present you with obsolete show files." %}
 
 Check [here](/mydoc_troubleshooting_video.html) for common troubleshooting techniques if you have trouble getting started.
 
@@ -46,8 +46,8 @@ For good practice, keep the files organized in a folder with consistent naming c
 
 Now we're onto actually filling in the details according to a show. We will use several examples throughout to illustrate the different scenarios you might encounter. 
 
-If you need a refresher navigating the workspace, check [here](mydoc_qlab.html#Workspace). For our purposes, the parts that matter to us the most are the `playheads`, which controls what `cue` is being selected/pending/on standby (highlighted in blue). 
-* You can click to select any cue, and that puts in into standby. 
+If you need a refresher navigating the workspace, check [here](mydoc_qlab.html#Workspace). For our purposes, the part that matters to us the most is the `playhead`, which controls what `cue` is being selected/pending/on standby (highlighted in blue). 
+* You can click to select any cue, and that puts it in into standby. 
 * To play a cue, hit `space` to play the cue on standby. 
 * To stop cues, hit `escape` to ''**panic all**'' cues; this fades everything down in 1 second, making the stop seem intentional when it's not.
 
@@ -57,7 +57,7 @@ First navigate to the **Text** column of the **Title** cue (cue name: `Title`; c
 
 {% include image.html file="title-text.png" alt="QLab5" caption="Edit Title Cue" max-width="23px"%}
 
-If the template is set up correctly, you should see the static image on `input 7` of the ATEM Multiview. Check [here](/mydoc_troubleshooting.html) if you're seeing otherwise. (You multiview will not look like this. I'm using the multiview here to show you both the QLab progress bars and the program output.)
+If the template is set up correctly, you should see the static image on `input 7` of the ATEM Multiview. Check [here](/mydoc_troubleshooting.html) if you're seeing otherwise. (Your multiview will not look like this. I'm using the multiview here to show you both the QLab progress bars and the program output.)
 
 <video autoplay loop muted playsinline width="100%">
   <source src="{{ '/videos/title.mp4' | relative_url }}" type="video/mp4">
@@ -74,7 +74,7 @@ Usually, there's just enough information to fill out the titles and subtitles (o
 
 You can select the text and change its color however you desire using the `text color panel`. When we livestream an event, leave the Carleton Livestream URL [go.carleton.edu/carletonlive](go.carleton.edu/carletonlive) in. Otherwise, delete the link. Contact [Alexi Carlson](mailto:acarlson4@carleton.edu) if you don't know whether the event is being streamed or not.
 
-{% include tip.html content=" If the texts exceeds the boundaries of the output screen, rather than adjusting the font sizes individually, you can adjust the **`Scale`** of the entire cue in the **`Geometry`** tab. You can also adjust the **`Translation`** and **`Rotation`** of cues, if the properties apply. All these parameters are ''draggable'', so you don't have to enter the values manually." %}
+{% include tip.html content=" If the text exceeds the boundaries of the output screen, rather than adjusting the font sizes individually, you can adjust the **`Scale`** of the entire cue in the **`Geometry`** tab. You can also adjust the **`Translation`** and **`Rotation`** of cues, if the properties apply. All these parameters are ''draggable'', so you don't have to enter the values manually." %}
 
 {% include image.html file="title-geometry.png" alt="Title Geometry" caption="Edit Cue Geometry"%}
 
@@ -93,7 +93,7 @@ The only two performers `Susie Park` and `Timothy Lovelace` are both introduced 
 
 {% include image.html file="basic-title-1.png" alt="Basic Title" caption="Title with Piece Information." %}
 
-You will note that I also omitted the movements. This is because the sonata only contains three movements. The real-estate of a lower-third limits how much information we can put out. We only include movements when not all movements are being played. For instance, if an artist is play only the second movement, we would write `Sonata ...., Movt. II`. When there are multiple movements, we use dash to connect them: `..., Movt. I-III`.
+You will note that I also omitted the movements. This is because the sonata only contains three movements. The real-estate of a lower-third limits how much information we can put out. We only include movements when not all movements are being played. For instance, if an artist is playing only the second movement, we would write `Sonata ...., Movt. II`. When there are multiple movements, we use a dash to connect them: `..., Movt. I-III`.
 
 {% include image.html file="rename-q.png" alt="Rename Cue" caption="Cues without names will display text content." %}
 
@@ -162,7 +162,7 @@ As we said, when there's only a small group performing, we use `Cue 3` as a temp
 
 {% include image.html file="solo-piece.png" alt="Solo Piece" caption="Solo Piece" %}
 
-{% include note.html content="You will note that the composer of this piece contains special characters. To input accents on Mac, hold **`option`** can type the letter associated with that accent, listed in the following image. For more information, check [this Apple help article](https://support.apple.com/guide/pages/accents-emoji-and-special-characters-tanec2c2fdfd/mac). "%}
+{% include note.html content="You will note that the composer of this piece contains special characters. To input accents on Mac, hold **`option`** and type the letter associated with that accent, listed in the following image. For more information, check [this Apple help article](https://support.apple.com/guide/pages/accents-emoji-and-special-characters-tanec2c2fdfd/mac). "%}
 
 {% include image.html file="accents.png" alt="Accents" caption="Accents on Mac" %}
 

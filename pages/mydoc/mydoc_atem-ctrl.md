@@ -105,7 +105,7 @@ The switcher has 6 routable outputs. We're using at least 3.
 
 - Output 3 goes to a confidence monitor in the broadcast booth. This will follow whatever output 1 gets, so the technicians have an idea of what the audience is seeing.
 
-The rest of the outputs is defaulted to program. We sometimes use it for extra recording, a dedicated streaming feed into our [Pearl Nano](https://www.epiphan.com/products/pearl-nano/) streamer, etc.
+The rest of the outputs are defaulted to program. We sometimes use it for extra recording, a dedicated streaming feed into our [Pearl Nano](https://www.epiphan.com/products/pearl-nano/) streamer, etc.
 
 ### Keys
 

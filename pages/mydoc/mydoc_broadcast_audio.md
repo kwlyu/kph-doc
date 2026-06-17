@@ -49,7 +49,7 @@ Inputs 9-16 are inputs for Applebaum, though they can be used for other purposes
 ### Outputs
 
 - All inputs send to the **STEREO** bus, which goes to our ATEM switcher and feeds our recorder. 
-- The **MONITOR** outputs to a pair of stereo speakers (Mackie MR5 MK 2) in the broadcast booth; it receives the stereo feeds from the **STEREO** buss.
+- The **MONITOR** outputs to a pair of stereo speakers (Mackie MR5 MK 2) in the broadcast booth; it receives the stereo feeds from the **STEREO** bus.
 - In addition, **MATRIX 1** and **MATRIX 2** are the stereo feed going into our streamer. This feed is heavily compressed; we will talk about this in a [later section](mydoc_broadcast_audio.html#dynamics).
 
 
@@ -137,13 +137,13 @@ Make sure that signals are being routed correctly to the patched input channels.
 
 ## Monitor and Cue functions
 
-The Monitor function lets you monitor various outputs through your nearfield monitors. By default, this the monitor source is the STEREO channel. You can adjust this to your needs. Above the meters, click **MONITOR**.
+The Monitor function lets you monitor various outputs through your nearfield monitors. By default, the monitor source is the STEREO channel. You can adjust this to your needs. Above the meters, click **MONITOR**.
 
 {% include image.html file="ql1-monitor-screen.jpeg" alt="QL 1" caption="QL Monitors" %}
 
 
 
-The Cue function enables you to check an individual channel or DCA group by temporarily monitoring it via MONITOR OUT. You can press the **CUE** key for any channel/group to turn cue on. This console has CUE set to `post fader`, so you'll hear all the processing/panning that goes into the STEREO feed. You can change this in the **CUE** window. Note that `PFL` means pre-fader and `AFL` means post-fader. When something is being cued the meter field will indicate the output level of the cue out.
+The Cue function enables you to check an individual channel or DCA group by temporarily monitoring it via MONITOR OUT. You can press the **CUE** key for any channel/group to turn cue on. This console has CUE set to `post fader`, so you'll hear all the processing/panning that goes into the STEREO feed. You can change this in the **CUE** window. Note that `PFL` means pre-fader and `AFL` means post-fader. When something is being cued, the meter field will indicate the output level of the cue out.
 
 {% include image.html file="ql1-cue-screen.jpeg" alt="QL 1" caption="QL Cues" %}
 

@@ -119,7 +119,7 @@ DM3 will automatically mount any **patched and supported** DANTE I/O. If you hav
 Long story short, here's the dip switches settings for 
 
 - Kracum: **only 2 and 4 down**, the rest is up
-- Applebam: **only 2 and 7 down**, the rest is up.
+- Applebaum: **only 2 and 7 down**, the rest is up.
 
 Here's what each dip switch does.
 
@@ -168,7 +168,7 @@ You can leave this the way it is. Whenever you recall a scene on a console, you'
 
 This happens when multiple consoles are sharing the same Dante channel, but the transmitting channel doesn't have `multicast` enabled. Before we begin, it's always good practice to check the Rx and Tx channels are patched correctly.
 
-By default, Dante uses `unitcast` to transmit audio. You'll need to enable `multicast` manually if you want the same channel of audio to go to different devices downstream. To do this, first log into Dante Domain Manager.
+By default, Dante uses `unicast` to transmit audio. You'll need to enable `multicast` manually if you want the same channel of audio to go to different devices downstream. To do this, first log into Dante Domain Manager.
 
 
 <!-- <div style="display: flex; gap: 10px; justify-content: center; align-items: stretch; width: 100%;">

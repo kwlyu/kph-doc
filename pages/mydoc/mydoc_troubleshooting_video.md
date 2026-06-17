@@ -47,7 +47,7 @@ You can now run the lower thirds cues normally. Remember to always wait for the 
 
 ##  QLab lower thirds are displaying only to the QLab output / not overlaying on the program
 
-Sometimes this happens after a power outage where everything is power-cycled. The ATEM switcher or the laptop controlling the ATEM refreshes its `Downstream Key` settings. Make sure the `Donstream Key` has the following settings:
+Sometimes this happens after a power outage where everything is power-cycled. The ATEM switcher or the laptop controlling the ATEM refreshes its `Downstream Key` settings. Make sure the `Downstream Key` has the following settings:
 
 <!-- {% include callout.html content="
 Fill Source:  **QLAB** <br>
